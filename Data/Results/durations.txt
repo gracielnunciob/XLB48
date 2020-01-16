@@ -1,0 +1,827 @@
+Data/1. Love\LOVE001E.wav 	 14.0 
+
+Data/1. Love\LOVE001F.wav 	 20.0 
+
+Data/1. Love\LOVE001G.wav 	 5.442176870748299 
+
+Data/1. Love\LOVE002E.wav 	 10.0 
+
+Data/1. Love\LOVE002F.wav 	 14.0 
+
+Data/1. Love\LOVE002G.wav 	 6.0 
+
+Data/1. Love\LOVE003E.wav 	 23.0 
+
+Data/1. Love\LOVE003F.wav 	 14.0 
+
+Data/1. Love\LOVE003G.wav 	 5.0 
+
+Data/1. Love\LOVE004E.wav 	 20.0 
+
+Data/1. Love\LOVE004F.wav 	 8.0 
+
+Data/1. Love\LOVE004G.wav 	 10.118004535147392 
+
+Data/1. Love\LOVE005E.wav 	 20.0 
+
+Data/1. Love\LOVE005F.wav 	 8.0 
+
+Data/1. Love\LOVE005G.wav 	 25.0 
+
+Data/1. Love\LOVE006E.wav 	 14.0 
+
+Data/1. Love\LOVE006F.wav 	 26.0 
+
+Data/1. Love\LOVE006G.wav 	 25.0 
+
+Data/1. Love\LOVE007E.wav 	 16.0 
+
+Data/1. Love\LOVE007F.wav 	 18.0 
+
+Data/1. Love\LOVE007G.wav 	 13.0 
+
+Data/1. Love\LOVE008E.wav 	 35.0 
+
+Data/1. Love\LOVE008G.wav 	 7.0 
+
+Data/1. Love\LOVE009E.wav 	 29.0 
+
+Data/1. Love\LOVE009G.wav 	 6.0 
+
+Data/1. Love\LOVE010E.wav 	 19.0 
+
+Data/1. Love\LOVE010G.wav 	 16.0 
+
+Data/1. Love\LOVE011E.wav 	 16.0 
+
+Data/1. Love\LOVE011G.wav 	 14.0 
+
+Data/1. Love\LOVE012E.wav 	 12.0 
+
+Data/1. Love\LOVE012G.wav 	 13.0 
+
+Data/1. Love\LOVE013E.wav 	 13.0 
+
+Data/1. Love\LOVE013G.wav 	 20.0 
+
+Data/1. Love\LOVE014E.wav 	 17.0 
+
+Data/1. Love\LOVE014G.wav 	 27.0 
+
+Data/1. Love\LOVE015E.wav 	 8.0 
+
+Data/1. Love\LOVE015G.wav 	 10.0 
+
+Data/1. Love\LOVE016E.wav 	 13.0 
+
+Data/1. Love\LOVE016G.wav 	 12.0 
+
+Data/1. Love\LOVE017E.wav 	 14.0 
+
+Data/1. Love\LOVE017G.wav 	 37.0 
+
+Data/1. Love\LOVE018E.wav 	 16.0 
+
+Data/1. Love\LOVE018G.wav 	 12.0 
+
+Data/1. Love\LOVE019E.wav 	 38.0 
+
+Data/1. Love\LOVE019G.wav 	 20.0 
+
+Data/1. Love\LOVE020E.wav 	 17.0 
+
+Data/1. Love\LOVE020G.wav 	 14.540997732426304 
+
+Data/1. Love\LOVE021E.wav 	 14.0 
+
+Data/1. Love\LOVE021G.wav 	 20.0 
+
+Data/1. Love\LOVE022G.wav 	 10.0 
+
+Data/1. Love\LOVE023G.wav 	 13.0 
+
+Data/1. Love\LOVE024G.wav 	 11.0 
+
+Data/1. Love\LOVE025G.wav 	 14.479138321995466 
+
+Data/1. Love\LOVE026G.wav 	 51.0 
+
+Data/1. Love\LOVE027G.wav 	 35.0 
+
+Data/1. Love\LOVE028G.wav 	 12.0 
+
+Data/1. Love\LOVE029G.wav 	 20.0 
+
+Data/1. Love\LOVE030G.wav 	 35.0 
+
+Data/1. Love\LOVE031G.wav 	 9.0 
+
+Data/1. Love\LOVE032G.wav 	 45.0 
+
+Data/1. Love\LOVE033G.wav 	 4.0 
+
+Data/1. Love\LOVE034G.wav 	 15.0 
+
+Data/1. Love\LOVE035G.wav 	 40.0 
+
+Data/1. Love\LOVE036G.wav 	 28.0 
+
+Data/1. Love\LOVE037G.wav 	 63.0 
+
+Data/1. Love\LOVE038G.wav 	 11.0 
+
+Data/1. Love\LOVE039G.wav 	 29.0 
+
+Data/1. Love\LOVE040G.wav 	 8.0 
+
+Data/1. Love\LOVE041G.wav 	 15.0 
+
+Data/1. Love\LOVE042G.wav 	 15.0 
+
+Data/1. Love\LOVE043G.wav 	 23.0 
+
+Data/1. Love\LOVE044G.wav 	 5.0 
+
+Data/1. Love\LOVE045G.wav 	 9.0 
+
+Data/1. Love\LOVE046G.wav 	 11.0 
+
+Data/1. Love\LOVE047G.wav 	 8.0 
+
+Data/1. Love\LOVE048G.wav 	 11.0 
+
+Data/1. Love\LOVE049G.wav 	 10.0 
+
+Data/1. Love\LOVE050G.wav 	 27.0 
+
+Data/1. Love\LOVE051G.wav 	 19.0 
+
+Data/1. Love\LOVE052G.wav 	 25.0 
+
+Data/1. Love\LOVE053G.wav 	 15.0 
+
+Data/1. Love\LOVE054G.wav 	 30.0 
+
+Data/1. Love\LOVE055G.wav 	 9.0 
+
+Data/1. Love\LOVE056G.wav 	 18.0 
+
+Data/1. Love\LOVE057G.wav 	 9.0 
+
+Data/1. Love\LOVE058G.wav 	 24.0 
+
+Data/1. Love\LOVE059G.wav 	 20.0 
+
+Data/2. Bravery\BRAVERY001E.wav 	 23.0 
+
+Data/2. Bravery\BRAVERY001F.wav 	 16.0 
+
+Data/2. Bravery\BRAVERY001G.wav 	 10.776009070294785 
+
+Data/2. Bravery\BRAVERY002E.wav 	 14.0 
+
+Data/2. Bravery\BRAVERY002F.wav 	 20.0 
+
+Data/2. Bravery\BRAVERY002G.wav 	 7.0 
+
+Data/2. Bravery\BRAVERY003E.wav 	 24.0 
+
+Data/2. Bravery\BRAVERY003F.wav 	 16.0 
+
+Data/2. Bravery\BRAVERY003G.wav 	 10.0 
+
+Data/2. Bravery\BRAVERY004E.wav 	 21.0 
+
+Data/2. Bravery\BRAVERY004F.wav 	 6.0 
+
+Data/2. Bravery\BRAVERY004G.wav 	 19.0 
+
+Data/2. Bravery\BRAVERY005E.wav 	 4.0 
+
+Data/2. Bravery\BRAVERY005F.wav 	 7.0 
+
+Data/2. Bravery\BRAVERY005G.wav 	 10.85201814058957 
+
+Data/2. Bravery\BRAVERY006E.wav 	 5.0 
+
+Data/2. Bravery\BRAVERY006F.wav 	 16.0 
+
+Data/2. Bravery\BRAVERY006G.wav 	 11.0 
+
+Data/2. Bravery\BRAVERY007E.wav 	 4.0 
+
+Data/2. Bravery\BRAVERY007F.wav 	 17.0 
+
+Data/2. Bravery\BRAVERY007G.wav 	 12.0 
+
+Data/2. Bravery\BRAVERY008E.wav 	 11.0 
+
+Data/2. Bravery\BRAVERY008F.wav 	 9.0 
+
+Data/2. Bravery\BRAVERY008G.wav 	 18.0 
+
+Data/2. Bravery\BRAVERY009E.wav 	 12.0 
+
+Data/2. Bravery\BRAVERY009F.wav 	 9.0 
+
+Data/2. Bravery\BRAVERY009G.wav 	 24.0 
+
+Data/2. Bravery\BRAVERY010E.wav 	 13.0 
+
+Data/2. Bravery\BRAVERY010G.wav 	 15.0 
+
+Data/2. Bravery\BRAVERY011E.wav 	 5.0 
+
+Data/2. Bravery\BRAVERY011G.wav 	 15.0 
+
+Data/2. Bravery\BRAVERY012G.wav 	 9.0 
+
+Data/2. Bravery\BRAVERY013G.wav 	 5.0 
+
+Data/2. Bravery\BRAVERY014G.wav 	 22.0 
+
+Data/2. Bravery\BRAVERY015G.wav 	 26.0 
+
+Data/2. Bravery\BRAVERY016G.wav 	 12.0 
+
+Data/2. Bravery\BRAVERY017G.wav 	 10.0 
+
+Data/2. Bravery\BRAVERY018G.wav 	 25.0 
+
+Data/2. Bravery\BRAVERY019G.wav 	 14.0 
+
+Data/2. Bravery\BRAVERY020G.wav 	 42.0 
+
+Data/2. Bravery\BRAVERY021G.wav 	 17.0 
+
+Data/2. Bravery\BRAVERY022G.wav 	 36.0 
+
+Data/2. Bravery\BRAVERY023G.wav 	 21.0 
+
+Data/2. Bravery\BRAVERY024G.wav 	 58.0 
+
+Data/2. Bravery\BRAVERY025G.wav 	 25.0 
+
+Data/2. Bravery\BRAVERY026G.wav 	 30.0 
+
+Data/2. Bravery\BRAVERY027G.wav 	 22.0 
+
+Data/2. Bravery\BRAVERY028G.wav 	 8.0 
+
+Data/2. Bravery\BRAVERY029G.wav 	 10.0 
+
+Data/2. Bravery\BRAVERY030G.wav 	 16.0 
+
+Data/3. Cheerful\CHEERFUL001E.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL001F.wav 	 8.0 
+
+Data/3. Cheerful\CHEERFUL001G.wav 	 6.2982312925170065 
+
+Data/3. Cheerful\CHEERFUL002E.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL002F.wav 	 7.0 
+
+Data/3. Cheerful\CHEERFUL002G.wav 	 18.0 
+
+Data/3. Cheerful\CHEERFUL003E.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL003F.wav 	 30.0 
+
+Data/3. Cheerful\CHEERFUL003G.wav 	 20.9 
+
+Data/3. Cheerful\CHEERFUL004E.wav 	 17.0 
+
+Data/3. Cheerful\CHEERFUL004F.wav 	 5.0 
+
+Data/3. Cheerful\CHEERFUL004G.wav 	 10.698004535147392 
+
+Data/3. Cheerful\CHEERFUL005E.wav 	 6.0 
+
+Data/3. Cheerful\CHEERFUL005F.wav 	 9.0 
+
+Data/3. Cheerful\CHEERFUL005G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL006E.wav 	 28.0 
+
+Data/3. Cheerful\CHEERFUL006F.wav 	 35.0 
+
+Data/3. Cheerful\CHEERFUL006G.wav 	 9.0 
+
+Data/3. Cheerful\CHEERFUL007E.wav 	 7.0 
+
+Data/3. Cheerful\CHEERFUL007F.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL007G.wav 	 36.0 
+
+Data/3. Cheerful\CHEERFUL008E.wav 	 17.0 
+
+Data/3. Cheerful\CHEERFUL008F.wav 	 13.0 
+
+Data/3. Cheerful\CHEERFUL008G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL009E.wav 	 18.0 
+
+Data/3. Cheerful\CHEERFUL009F.wav 	 5.0 
+
+Data/3. Cheerful\CHEERFUL009G.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL010E.wav 	 16.0 
+
+Data/3. Cheerful\CHEERFUL010F.wav 	 22.0 
+
+Data/3. Cheerful\CHEERFUL010G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL011E.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL011F.wav 	 29.0 
+
+Data/3. Cheerful\CHEERFUL011G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL012E.wav 	 20.0 
+
+Data/3. Cheerful\CHEERFUL012F.wav 	 19.0 
+
+Data/3. Cheerful\CHEERFUL012G.wav 	 13.0 
+
+Data/3. Cheerful\CHEERFUL013E.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL013F.wav 	 13.0 
+
+Data/3. Cheerful\CHEERFUL013G.wav 	 9.0 
+
+Data/3. Cheerful\CHEERFUL014E.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL014G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL015E.wav 	 8.0 
+
+Data/3. Cheerful\CHEERFUL015G.wav 	 19.0 
+
+Data/3. Cheerful\CHEERFUL016E.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL016G.wav 	 20.0 
+
+Data/3. Cheerful\CHEERFUL017G.wav 	 14.0 
+
+Data/3. Cheerful\CHEERFUL018G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL019G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL020G.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL021G.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL022G.wav 	 7.0 
+
+Data/3. Cheerful\CHEERFUL023G.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL024G.wav 	 15.540997732426304 
+
+Data/3. Cheerful\CHEERFUL025G.wav 	 23.0 
+
+Data/3. Cheerful\CHEERFUL026G.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL027G.wav 	 35.0 
+
+Data/3. Cheerful\CHEERFUL028G.wav 	 6.815918367346939 
+
+Data/3. Cheerful\CHEERFUL029G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL030G.wav 	 9.0 
+
+Data/3. Cheerful\CHEERFUL031G.wav 	 16.0 
+
+Data/3. Cheerful\CHEERFUL032G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL033G.wav 	 16.0 
+
+Data/3. Cheerful\CHEERFUL034G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL035G.wav 	 5.0 
+
+Data/3. Cheerful\CHEERFUL036G.wav 	 13.0 
+
+Data/3. Cheerful\CHEERFUL037G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL038G.wav 	 17.0 
+
+Data/3. Cheerful\CHEERFUL039G.wav 	 18.0 
+
+Data/3. Cheerful\CHEERFUL040G.wav 	 8.0 
+
+Data/3. Cheerful\CHEERFUL041G.wav 	 41.7772335600907 
+
+Data/3. Cheerful\CHEERFUL042G.wav 	 16.0 
+
+Data/3. Cheerful\CHEERFUL043G.wav 	 21.0 
+
+Data/3. Cheerful\CHEERFUL044G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL045G.wav 	 25.0 
+
+Data/3. Cheerful\CHEERFUL046G.wav 	 57.0 
+
+Data/3. Cheerful\CHEERFUL047G.wav 	 22.0 
+
+Data/3. Cheerful\CHEERFUL048G.wav 	 27.0 
+
+Data/3. Cheerful\CHEERFUL049G.wav 	 23.0 
+
+Data/3. Cheerful\CHEERFUL050G.wav 	 33.0 
+
+Data/3. Cheerful\CHEERFUL051G.wav 	 7.0 
+
+Data/3. Cheerful\CHEERFUL052G.wav 	 15.0 
+
+Data/3. Cheerful\CHEERFUL053G.wav 	 18.0 
+
+Data/3. Cheerful\CHEERFUL054G.wav 	 20.0 
+
+Data/3. Cheerful\CHEERFUL055G.wav 	 22.0 
+
+Data/3. Cheerful\CHEERFUL056G.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL057G.wav 	 52.0 
+
+Data/3. Cheerful\CHEERFUL058G.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL059G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL060G.wav 	 8.0 
+
+Data/3. Cheerful\CHEERFUL061G.wav 	 43.0 
+
+Data/3. Cheerful\CHEERFUL062G.wav 	 7.0 
+
+Data/3. Cheerful\CHEERFUL063G.wav 	 17.0 
+
+Data/3. Cheerful\CHEERFUL064G.wav 	 30.0 
+
+Data/3. Cheerful\CHEERFUL065G.wav 	 19.0 
+
+Data/3. Cheerful\CHEERFUL066G.wav 	 65.0 
+
+Data/3. Cheerful\CHEERFUL067G.wav 	 11.0 
+
+Data/3. Cheerful\CHEERFUL068G.wav 	 21.0 
+
+Data/3. Cheerful\CHEERFUL069G.wav 	 20.0 
+
+Data/3. Cheerful\CHEERFUL070G.wav 	 25.0 
+
+Data/3. Cheerful\CHEERFUL071G.wav 	 26.0 
+
+Data/3. Cheerful\CHEERFUL072G.wav 	 22.0 
+
+Data/3. Cheerful\CHEERFUL073G.wav 	 32.0 
+
+Data/3. Cheerful\CHEERFUL074G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL075G.wav 	 21.0 
+
+Data/3. Cheerful\CHEERFUL076G.wav 	 12.0 
+
+Data/3. Cheerful\CHEERFUL077G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL078G.wav 	 10.0 
+
+Data/3. Cheerful\CHEERFUL079G.wav 	 28.0 
+
+Data/4. Fearful\FEARFUL001E.wav 	 18.0 
+
+Data/4. Fearful\FEARFUL001F.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL001G.wav 	 10.188163265306123 
+
+Data/4. Fearful\FEARFUL002E.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL002F.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL002G.wav 	 5.00702947845805 
+
+Data/4. Fearful\FEARFUL003E.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL003F.wav 	 4.0 
+
+Data/4. Fearful\FEARFUL003G.wav 	 6.838004535147392 
+
+Data/4. Fearful\FEARFUL004E.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL004F.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL004G.wav 	 11.758004535147393 
+
+Data/4. Fearful\FEARFUL005E.wav 	 18.0 
+
+Data/4. Fearful\FEARFUL005F.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL005G.wav 	 17.0 
+
+Data/4. Fearful\FEARFUL006E.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL006F.wav 	 7.0 
+
+Data/4. Fearful\FEARFUL006G.wav 	 9.8 
+
+Data/4. Fearful\FEARFUL007E.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL007F.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL007G.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL008E.wav 	 7.0 
+
+Data/4. Fearful\FEARFUL008F.wav 	 22.0 
+
+Data/4. Fearful\FEARFUL008G.wav 	 22.0 
+
+Data/4. Fearful\FEARFUL009E.wav 	 7.0 
+
+Data/4. Fearful\FEARFUL009F.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL009G.wav 	 27.999637188208617 
+
+Data/4. Fearful\FEARFUL010E.wav 	 22.0 
+
+Data/4. Fearful\FEARFUL010F.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL010G.wav 	 36.0 
+
+Data/4. Fearful\FEARFUL011E.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL011F.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL011G.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL012E.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL012F.wav 	 14.0 
+
+Data/4. Fearful\FEARFUL012G.wav 	 17.2 
+
+Data/4. Fearful\FEARFUL013E.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL013F.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL013G.wav 	 27.0 
+
+Data/4. Fearful\FEARFUL014E.wav 	 40.0 
+
+Data/4. Fearful\FEARFUL014F.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL014G.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL015E.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL015F.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL015G.wav 	 18.0 
+
+Data/4. Fearful\FEARFUL016E.wav 	 14.0 
+
+Data/4. Fearful\FEARFUL016F.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL016G.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL017E.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL017F.wav 	 27.0 
+
+Data/4. Fearful\FEARFUL017G.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL018E.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL018F.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL018G.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL019E.wav 	 23.0 
+
+Data/4. Fearful\FEARFUL019F.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL019G.wav 	 4.0 
+
+Data/4. Fearful\FEARFUL020E.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL020F.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL020G.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL021E.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL021F.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL021G.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL022E.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL022F.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL022G.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL023E.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL023F.wav 	 4.0 
+
+Data/4. Fearful\FEARFUL023G.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL024E.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL024F.wav 	 7.0 
+
+Data/4. Fearful\FEARFUL024G.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL025E.wav 	 27.0 
+
+Data/4. Fearful\FEARFUL025F.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL025G.wav 	 13.0 
+
+Data/4. Fearful\FEARFUL026E.wav 	 29.0 
+
+Data/4. Fearful\FEARFUL026F.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL026G.wav 	 40.0 
+
+Data/4. Fearful\FEARFUL027E.wav 	 17.0 
+
+Data/4. Fearful\FEARFUL027F.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL027G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL028.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL028F.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL028G.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL029E.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL029F.wav 	 11.0 
+
+Data/4. Fearful\FEARFUL029G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL030E.wav 	 30.0 
+
+Data/4. Fearful\FEARFUL030F.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL030G.wav 	 17.0 
+
+Data/4. Fearful\FEARFUL031E.wav 	 25.0 
+
+Data/4. Fearful\FEARFUL031F.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL031G.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL032E.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL032F.wav 	 6.0 
+
+Data/4. Fearful\FEARFUL032G.wav 	 30.755192743764173 
+
+Data/4. Fearful\FEARFUL033E.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL033F.wav 	 29.0 
+
+Data/4. Fearful\FEARFUL033G.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL034F.wav 	 29.0 
+
+Data/4. Fearful\FEARFUL034G.wav 	 13.0 
+
+Data/4. Fearful\FEARFUL035F.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL035G.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL036F.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL036G.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL037F.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL037G.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL038F.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL038G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL039F.wav 	 31.0 
+
+Data/4. Fearful\FEARFUL039G.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL040F.wav 	 18.0 
+
+Data/4. Fearful\FEARFUL040G.wav 	 13.0 
+
+Data/4. Fearful\FEARFUL041F.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL041G.wav 	 13.0 
+
+Data/4. Fearful\FEARFUL042F.wav 	 20.0 
+
+Data/4. Fearful\FEARFUL042G.wav 	 29.0 
+
+Data/4. Fearful\FEARFUL043F.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL043G.wav 	 35.0 
+
+Data/4. Fearful\FEARFUL044F.wav 	 33.0 
+
+Data/4. Fearful\FEARFUL044G.wav 	 6.0 
+
+Data/4. Fearful\FEARFUL045F.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL045G.wav 	 12.0 
+
+Data/4. Fearful\FEARFUL046F.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL046G.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL047F.wav 	 7.0 
+
+Data/4. Fearful\FEARFUL047G.wav 	 34.0 
+
+Data/4. Fearful\FEARFUL048F.wav 	 35.0 
+
+Data/4. Fearful\FEARFUL048G.wav 	 25.0 
+
+Data/4. Fearful\FEARFUL049F.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL049G.wav 	 17.0 
+
+Data/4. Fearful\FEARFUL050F.wav 	 51.0 
+
+Data/4. Fearful\FEARFUL050G.wav 	 17.0 
+
+Data/4. Fearful\FEARFUL051F.wav 	 19.0 
+
+Data/4. Fearful\FEARFUL051G.wav 	 9.0 
+
+Data/4. Fearful\FEARFUL052G.wav 	 23.0 
+
+Data/4. Fearful\FEARFUL053G.wav 	 13.0 
+
+Data/4. Fearful\FEARFUL054G.wav 	 14.0 
+
+Data/4. Fearful\FEARFUL055G.wav 	 18.0 
+
+Data/4. Fearful\FEARFUL056G.wav 	 31.0 
+
+Data/4. Fearful\FEARFUL057G.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL058G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL059G.wav 	 21.0 
+
+Data/4. Fearful\FEARFUL060G.wav 	 29.0 
+
+Data/4. Fearful\FEARFUL061G.wav 	 22.0 
+
+Data/4. Fearful\FEARFUL062G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL063G.wav 	 71.0 
+
+Data/4. Fearful\FEARFUL064G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL065G.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL066G.wav 	 10.0 
+
+Data/4. Fearful\FEARFUL067G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL068G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL069G.wav 	 28.0 
+
+Data/4. Fearful\FEARFUL070G.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL071G.wav 	 35.0 
+
+Data/4. Fearful\FEARFUL072G.wav 	 26.0 
+
+Data/4. Fearful\FEARFUL073G.wav 	 27.0 
+
+Data/4. Fearful\FEARFUL074G.wav 	 27.0 
+
+Data/4. Fearful\FEARFUL075G.wav 	 48.0 
+
+Data/4. Fearful\FEARFUL076G.wav 	 16.0 
+
+Data/4. Fearful\FEARFUL077G.wav 	 14.0 
+
+Data/4. Fearful\FEARFUL078G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL079G.wav 	 15.0 
+
+Data/4. Fearful\FEARFUL080G.wav 	 8.0 
+
+Data/4. Fearful\FEARFUL081G.wav 	 28.0 
+
+Data/4. Fearful\FEARFUL082G.wav 	 24.0 
+
+Data/4. Fearful\FEARFUL083G.wav 	 5.0 
+
+Data/4. Fearful\FEARFUL084G.wav 	 19.0 
+
+​

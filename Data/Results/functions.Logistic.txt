@@ -1,0 +1,143 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     dataset-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    199
+Attributes:   30
+              Area_Method_of_Moments_of_MFCCs_Overall_Average
+              Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation
+              Beat_Sum_Overall_Average
+              Beat_Sum_Overall_Standard_Deviation
+              Compactness_Overall_Average
+              Compactness_Overall_Standard_Deviation
+              Fraction_Of_Low_Energy_Windows_Overall_Average
+              Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation
+              LPC_Overall_Average
+              LPC_Overall_Standard_Deviation
+              Method_of_Moments_Overall_Average
+              Method_of_Moments_Overall_Standard_Deviation
+              Root_Mean_Square_Overall_Average
+              Root_Mean_Square_Overall_Standard_Deviation
+              Spectral_Centroid_Overall_Average
+              Spectral_Centroid_Overall_Standard_Deviation
+              Spectral_Flux_Overall_Average
+              Spectral_Flux_Overall_Standard_Deviation
+              Spectral_Rolloff_Point_Overall_Average
+              Spectral_Rolloff_Point_Overall_Standard_Deviation
+              Spectral_Variability_Overall_Average
+              Spectral_Variability_Overall_Standard_Deviation
+              Strength_Of_Strongest_Beat_Overall_Average
+              Strength_Of_Strongest_Beat_Overall_Standard_Deviation
+              Strongest_Beat_Overall_Average
+              Strongest_Beat_Overall_Standard_Deviation
+              Zero_Crossings_Overall_Average
+              Zero_Crossings_Overall_Standard_Deviation
+              Grand_Total
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                                                               Class
+Variable                                                                           B                       F                       C
+====================================================================================================================================
+Area_Method_of_Moments_of_MFCCs_Overall_Average                                    0                       0                      -0
+Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation                         0                      -0                      -0
+Beat_Sum_Overall_Average                                                     -0.0219                -12.8928                 -0.0231
+Beat_Sum_Overall_Standard_Deviation                                           0.0531                -20.3014                 -0.1674
+Compactness_Overall_Average                                                  -0.0219                 -7.6254                 -0.0132
+Compactness_Overall_Standard_Deviation                                        0.0031                 14.9025                 -0.0366
+Fraction_Of_Low_Energy_Windows_Overall_Average                               -4.6758               3119.7542                 -3.3809
+Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation                   -56.4031               8081.9571                -52.2137
+LPC_Overall_Average                                                          -5.6759                359.5117                 -4.0567
+LPC_Overall_Standard_Deviation                                               -6.6969              -3735.6217                  -5.487
+Method_of_Moments_Overall_Average                                                 -0                 -0.0001                      -0
+Method_of_Moments_Overall_Standard_Deviation                                       0                  0.0001                       0
+Root_Mean_Square_Overall_Average                                           -689.8891               5915.4711              -2000.1747
+Root_Mean_Square_Overall_Standard_Deviation                                 108.3536             -16595.8014                697.3528
+Spectral_Centroid_Overall_Average                                            -0.0243                 31.0559                 -0.2468
+Spectral_Centroid_Overall_Standard_Deviation                                 -0.0843               -244.1327                  0.5109
+Spectral_Flux_Overall_Average                                               7888.613            2097168.8596              20798.0035
+Spectral_Flux_Overall_Standard_Deviation                                   -458.0696             470359.1941              -3514.5763
+Spectral_Rolloff_Point_Overall_Average                                      -46.8684                270.7711                -18.9246
+Spectral_Rolloff_Point_Overall_Standard_Deviation                            -3.3826                40542.33                  11.762
+Spectral_Variability_Overall_Average                                      22718.7682             663265.4616              75091.9526
+Spectral_Variability_Overall_Standard_Deviation                            -974.2538             -43342.8847             -22497.0076
+Strength_Of_Strongest_Beat_Overall_Average                                  -40.1688             125427.1416                -68.3292
+Strength_Of_Strongest_Beat_Overall_Standard_Deviation                         5.2303            -549025.5203               -2812.593
+Strongest_Beat_Overall_Average                                               -0.0031                  -2.875                   0.007
+Strongest_Beat_Overall_Standard_Deviation                                    -0.0057                  0.3893                  0.0154
+Zero_Crossings_Overall_Average                                                0.1417                 14.2904                  0.1699
+Zero_Crossings_Overall_Standard_Deviation                                     0.1378                 34.1746                 -0.2182
+Grand_Total                                                                       -0                       0                       0
+Intercept                                                                    50.3285               6949.2296                 38.5377
+
+
+Odds Ratios...
+                                                                               Class
+Variable                                                                           B                       F                       C
+====================================================================================================================================
+Area_Method_of_Moments_of_MFCCs_Overall_Average                                    1                       1                       1
+Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation                         1                       1                       1
+Beat_Sum_Overall_Average                                                      0.9784                       0                  0.9772
+Beat_Sum_Overall_Standard_Deviation                                           1.0545                       0                  0.8459
+Compactness_Overall_Average                                                   0.9783                  0.0005                  0.9869
+Compactness_Overall_Standard_Deviation                                        1.0032            2965423.4786                  0.9641
+Fraction_Of_Low_Energy_Windows_Overall_Average                                0.0093                Infinity                   0.034
+Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation                          0                Infinity                       0
+LPC_Overall_Average                                                           0.0034  1.3612650089345662E156                  0.0173
+LPC_Overall_Standard_Deviation                                                0.0012                       0                  0.0041
+Method_of_Moments_Overall_Average                                                  1                  0.9999                       1
+Method_of_Moments_Overall_Standard_Deviation                                       1                  1.0001                       1
+Root_Mean_Square_Overall_Average                                                   0                Infinity                       0
+Root_Mean_Square_Overall_Standard_Deviation                     1.141202464806683E47                       0   7.185919889317732E302
+Spectral_Centroid_Overall_Average                                              0.976    3.071919619790618E13                  0.7813
+Spectral_Centroid_Overall_Standard_Deviation                                  0.9191                       0                  1.6668
+Spectral_Flux_Overall_Average                                               Infinity                Infinity                Infinity
+Spectral_Flux_Overall_Standard_Deviation                                           0                Infinity                       0
+Spectral_Rolloff_Point_Overall_Average                                             0   3.930112957537606E117                       0
+Spectral_Rolloff_Point_Overall_Standard_Deviation                              0.034                Infinity             128283.0401
+Spectral_Variability_Overall_Average                                        Infinity                Infinity                Infinity
+Spectral_Variability_Overall_Standard_Deviation                                    0                       0                       0
+Strength_Of_Strongest_Beat_Overall_Average                                         0                Infinity                       0
+Strength_Of_Strongest_Beat_Overall_Standard_Deviation                       186.8521                       0                       0
+Strongest_Beat_Overall_Average                                                0.9969                  0.0564                   1.007
+Strongest_Beat_Overall_Standard_Deviation                                     0.9944                  1.4759                  1.0155
+Zero_Crossings_Overall_Average                                                1.1523            1607842.8242                  1.1852
+Zero_Crossings_Overall_Standard_Deviation                                     1.1477    6.947429721892408E14                   0.804
+Grand_Total                                                                        1                       1                       1
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         116               58.2915 %
+Incorrectly Classified Instances        83               41.7085 %
+Kappa statistic                          0.4437
+Mean absolute error                      0.2259
+Root mean squared error                  0.4169
+Relative absolute error                 60.2492 %
+Root relative squared error             96.277  %
+Total Number of Instances              199     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.417    0.166    0.444      0.417    0.430      0.257    0.732     0.435     B
+                 0.840    0.047    0.857      0.840    0.848      0.798    0.949     0.847     F
+                 0.460    0.228    0.404      0.460    0.430      0.222    0.692     0.353     C
+                 0.608    0.115    0.646      0.608    0.626      0.503    0.804     0.560     L
+Weighted Avg.    0.583    0.139    0.589      0.583    0.585      0.447    0.795     0.550     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 20  1 20  7 |  a = B
+  2 42  4  2 |  b = F
+ 17  2 23  8 |  c = C
+  6  4 10 31 |  d = L
+

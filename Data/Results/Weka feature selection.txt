@@ -1,0 +1,80 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     test features-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    200
+Attributes:   29
+              Area Method of Moments of MFCCs Overall Average
+              Area Method of Moments of MFCCs Overall Standard Deviation
+              Beat Sum Overall Average
+              Beat Sum Overall Standard Deviation
+              Compactness Overall Average
+              Compactness Overall Standard Deviation
+              Fraction Of Low Energy Windows Overall Average
+              Fraction Of Low Energy Windows Overall Standard Deviation
+              LPC Overall Average
+              LPC Overall Standard Deviation
+              Method of Moments Overall Average
+              Method of Moments Overall Standard Deviation
+              Root Mean Square Overall Average
+              Root Mean Square Overall Standard Deviation
+              Spectral Centroid Overall Average
+              Spectral Centroid Overall Standard Deviation
+              Spectral Flux Overall Average
+              Spectral Flux Overall Standard Deviation
+              Spectral Rolloff Point Overall Average
+              Spectral Rolloff Point Overall Standard Deviation
+              Spectral Variability Overall Average
+              Spectral Variability Overall Standard Deviation
+              Strength Of Strongest Beat Overall Average
+              Strength Of Strongest Beat Overall Standard Deviation
+              Strongest Beat Overall Average
+              Strongest Beat Overall Standard Deviation
+              Zero Crossings Overall Average
+              Zero Crossings Overall Standard Deviation
+              Label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 29 Label):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 2         1 Area Method of Moments of MFCCs Overall Average
+ 1.1219    2 Area Method of Moments of MFCCs Overall Standard Deviation
+ 0.1628    9 LPC Overall Average
+ 0.0964    5 Compactness Overall Average
+ 0        10 LPC Overall Standard Deviation
+ 0        12 Method of Moments Overall Standard Deviation
+ 0         8 Fraction Of Low Energy Windows Overall Standard Deviation
+ 0        11 Method of Moments Overall Average
+ 0         7 Fraction Of Low Energy Windows Overall Average
+ 0        27 Zero Crossings Overall Average
+ 0         3 Beat Sum Overall Average
+ 0         4 Beat Sum Overall Standard Deviation
+ 0         6 Compactness Overall Standard Deviation
+ 0        13 Root Mean Square Overall Average
+ 0        28 Zero Crossings Overall Standard Deviation
+ 0        15 Spectral Centroid Overall Average
+ 0        22 Spectral Variability Overall Standard Deviation
+ 0        24 Strength Of Strongest Beat Overall Standard Deviation
+ 0        25 Strongest Beat Overall Average
+ 0        26 Strongest Beat Overall Standard Deviation
+ 0        23 Strength Of Strongest Beat Overall Average
+ 0        21 Spectral Variability Overall Average
+ 0        16 Spectral Centroid Overall Standard Deviation
+ 0        20 Spectral Rolloff Point Overall Standard Deviation
+ 0        17 Spectral Flux Overall Average
+ 0        18 Spectral Flux Overall Standard Deviation
+ 0        19 Spectral Rolloff Point Overall Average
+ 0        14 Root Mean Square Overall Standard Deviation
+
+Selected attributes: 1,2,9,5,10,12,8,11,7,27,3,4,6,13,28,15,22,24,25,26,23,21,16,20,17,18,19,14 : 28
+

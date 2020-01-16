@@ -1,0 +1,134 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dataset-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    199
+Attributes:   30
+              Area_Method_of_Moments_of_MFCCs_Overall_Average
+              Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation
+              Beat_Sum_Overall_Average
+              Beat_Sum_Overall_Standard_Deviation
+              Compactness_Overall_Average
+              Compactness_Overall_Standard_Deviation
+              Fraction_Of_Low_Energy_Windows_Overall_Average
+              Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation
+              LPC_Overall_Average
+              LPC_Overall_Standard_Deviation
+              Method_of_Moments_Overall_Average
+              Method_of_Moments_Overall_Standard_Deviation
+              Root_Mean_Square_Overall_Average
+              Root_Mean_Square_Overall_Standard_Deviation
+              Spectral_Centroid_Overall_Average
+              Spectral_Centroid_Overall_Standard_Deviation
+              Spectral_Flux_Overall_Average
+              Spectral_Flux_Overall_Standard_Deviation
+              Spectral_Rolloff_Point_Overall_Average
+              Spectral_Rolloff_Point_Overall_Standard_Deviation
+              Spectral_Variability_Overall_Average
+              Spectral_Variability_Overall_Standard_Deviation
+              Strength_Of_Strongest_Beat_Overall_Average
+              Strength_Of_Strongest_Beat_Overall_Standard_Deviation
+              Strongest_Beat_Overall_Average
+              Strongest_Beat_Overall_Standard_Deviation
+              Zero_Crossings_Overall_Average
+              Zero_Crossings_Overall_Standard_Deviation
+              Grand_Total
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Area_Method_of_Moments_of_MFCCs_Overall_Average <= 2550000000000000
+|   Compactness_Overall_Average <= 1728
+|   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation <= 0.000953
+|   |   |   LPC_Overall_Average <= -0.78537
+|   |   |   |   Spectral_Variability_Overall_Standard_Deviation <= 0.000611
+|   |   |   |   |   Spectral_Centroid_Overall_Standard_Deviation <= 51.55: C (17.0/2.0)
+|   |   |   |   |   Spectral_Centroid_Overall_Standard_Deviation > 51.55: B (2.0)
+|   |   |   |   Spectral_Variability_Overall_Standard_Deviation > 0.000611
+|   |   |   |   |   Beat_Sum_Overall_Average <= 51.89: B (8.0)
+|   |   |   |   |   Beat_Sum_Overall_Average > 51.89
+|   |   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation <= 0.000423
+|   |   |   |   |   |   |   Strongest_Beat_Overall_Standard_Deviation <= 34.39: B (6.0)
+|   |   |   |   |   |   |   Strongest_Beat_Overall_Standard_Deviation > 34.39: C (4.0/1.0)
+|   |   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation > 0.000423: C (4.0)
+|   |   |   LPC_Overall_Average > -0.78537
+|   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation <= 0.000531
+|   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation <= 0.00036
+|   |   |   |   |   |   Spectral_Variability_Overall_Average <= 0.000533
+|   |   |   |   |   |   |   Compactness_Overall_Average <= 1636: B (2.0)
+|   |   |   |   |   |   |   Compactness_Overall_Average > 1636: L (4.0)
+|   |   |   |   |   |   Spectral_Variability_Overall_Average > 0.000533
+|   |   |   |   |   |   |   Spectral_Variability_Overall_Standard_Deviation <= 0.000375: C (6.0)
+|   |   |   |   |   |   |   Spectral_Variability_Overall_Standard_Deviation > 0.000375
+|   |   |   |   |   |   |   |   Strongest_Beat_Overall_Average <= 205.4
+|   |   |   |   |   |   |   |   |   Method_of_Moments_Overall_Standard_Deviation <= 13187073.76: L (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Method_of_Moments_Overall_Standard_Deviation > 13187073.76
+|   |   |   |   |   |   |   |   |   |   LPC_Overall_Standard_Deviation <= 2.2295: B (19.0/8.0)
+|   |   |   |   |   |   |   |   |   |   LPC_Overall_Standard_Deviation > 2.2295
+|   |   |   |   |   |   |   |   |   |   |   Compactness_Overall_Standard_Deviation <= 201.6: C (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Compactness_Overall_Standard_Deviation > 201.6: L (3.0/1.0)
+|   |   |   |   |   |   |   |   Strongest_Beat_Overall_Average > 205.4: L (5.0/1.0)
+|   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation > 0.00036
+|   |   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation <= 0.000437: L (5.0)
+|   |   |   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation > 0.000437
+|   |   |   |   |   |   |   Compactness_Overall_Standard_Deviation <= 191.4
+|   |   |   |   |   |   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation <= 9760000000000: C (4.0)
+|   |   |   |   |   |   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation > 9760000000000
+|   |   |   |   |   |   |   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Average <= 436000000000000: L (2.0)
+|   |   |   |   |   |   |   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Average > 436000000000000: C (2.0)
+|   |   |   |   |   |   |   Compactness_Overall_Standard_Deviation > 191.4: L (4.0)
+|   |   |   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation > 0.000531
+|   |   |   |   |   Method_of_Moments_Overall_Standard_Deviation <= 18455183.63: L (5.0)
+|   |   |   |   |   Method_of_Moments_Overall_Standard_Deviation > 18455183.63: B (6.0/1.0)
+|   |   Strength_Of_Strongest_Beat_Overall_Standard_Deviation > 0.000953: B (11.0/1.0)
+|   Compactness_Overall_Average > 1728: L (10.0)
+Area_Method_of_Moments_of_MFCCs_Overall_Average > 2550000000000000
+|   Area_Method_of_Moments_of_MFCCs_Overall_Average <= 4450000000000000
+|   |   LPC_Overall_Average <= -0.61027
+|   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Average <= 2950000000000000: C (2.0)
+|   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Average > 2950000000000000: F (7.0)
+|   |   LPC_Overall_Average > -0.61027
+|   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation <= 29500000000000: F (4.0)
+|   |   |   Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation > 29500000000000: L (10.0/1.0)
+|   Area_Method_of_Moments_of_MFCCs_Overall_Average > 4450000000000000: F (39.0)
+
+Number of Leaves  : 	28
+
+Size of the tree : 	55
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         109               54.7739 %
+Incorrectly Classified Instances        90               45.2261 %
+Kappa statistic                          0.3967
+Mean absolute error                      0.2299
+Root mean squared error                  0.4594
+Relative absolute error                 61.3169 %
+Root relative squared error            106.1015 %
+Total Number of Instances              199     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.438    0.139    0.500      0.438    0.467      0.313    0.682     0.391     B
+                 0.840    0.047    0.857      0.840    0.848      0.798    0.902     0.791     F
+                 0.440    0.242    0.379      0.440    0.407      0.189    0.614     0.296     C
+                 0.471    0.176    0.480      0.471    0.475      0.297    0.651     0.380     L
+Weighted Avg.    0.548    0.151    0.554      0.548    0.550      0.400    0.712     0.465     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 21  0 17 10 |  a = B
+  0 42  4  4 |  b = F
+ 14  2 22 12 |  c = C
+  7  5 15 24 |  d = L
+

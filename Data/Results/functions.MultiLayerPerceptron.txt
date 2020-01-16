@@ -1,0 +1,673 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     dataset-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    199
+Attributes:   30
+              Area_Method_of_Moments_of_MFCCs_Overall_Average
+              Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation
+              Beat_Sum_Overall_Average
+              Beat_Sum_Overall_Standard_Deviation
+              Compactness_Overall_Average
+              Compactness_Overall_Standard_Deviation
+              Fraction_Of_Low_Energy_Windows_Overall_Average
+              Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation
+              LPC_Overall_Average
+              LPC_Overall_Standard_Deviation
+              Method_of_Moments_Overall_Average
+              Method_of_Moments_Overall_Standard_Deviation
+              Root_Mean_Square_Overall_Average
+              Root_Mean_Square_Overall_Standard_Deviation
+              Spectral_Centroid_Overall_Average
+              Spectral_Centroid_Overall_Standard_Deviation
+              Spectral_Flux_Overall_Average
+              Spectral_Flux_Overall_Standard_Deviation
+              Spectral_Rolloff_Point_Overall_Average
+              Spectral_Rolloff_Point_Overall_Standard_Deviation
+              Spectral_Variability_Overall_Average
+              Spectral_Variability_Overall_Standard_Deviation
+              Strength_Of_Strongest_Beat_Overall_Average
+              Strength_Of_Strongest_Beat_Overall_Standard_Deviation
+              Strongest_Beat_Overall_Average
+              Strongest_Beat_Overall_Standard_Deviation
+              Zero_Crossings_Overall_Average
+              Zero_Crossings_Overall_Standard_Deviation
+              Grand_Total
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.432683666798789
+    Node 4    6.283071767785469
+    Node 5    -7.498276198411673
+    Node 6    -3.077863273032674
+    Node 7    0.17655991167504748
+    Node 8    -9.20308445664847
+    Node 9    7.288484636104587
+    Node 10    7.343858347782935
+    Node 11    -2.9227179351155037
+    Node 12    8.673098753649793
+    Node 13    -2.6553159206956374
+    Node 14    -6.2288263477956844
+    Node 15    1.9759787403713893
+    Node 16    4.490176676322234
+    Node 17    -5.195708528373114
+    Node 18    -4.994892526032476
+    Node 19    -1.045417920368346
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -5.5459906515674025
+    Node 4    -3.3090664341314895
+    Node 5    3.9506535152713376
+    Node 6    3.679706379472179
+    Node 7    5.6945023338928475
+    Node 8    1.9336834836123755
+    Node 9    4.6667714218045395
+    Node 10    -2.3441276758435015
+    Node 11    4.890114050941436
+    Node 12    0.33230235801218927
+    Node 13    -1.1634067300149271
+    Node 14    -4.141783343908486
+    Node 15    2.2102274924118754
+    Node 16    1.2239539009903682
+    Node 17    2.566986182474643
+    Node 18    4.111886748836833
+    Node 19    -4.493416521067007
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    8.443115087536816
+    Node 4    -8.646978393682952
+    Node 5    2.770800620465395
+    Node 6    -6.329840760251286
+    Node 7    -4.173691046069884
+    Node 8    0.8954507421950079
+    Node 9    -8.892357203865826
+    Node 10    0.6752118756814469
+    Node 11    -0.5212122043116255
+    Node 12    -6.055222052462779
+    Node 13    -9.57815176504399
+    Node 14    7.692554658970966
+    Node 15    -6.2279157821621
+    Node 16    2.5458479172191395
+    Node 17    -2.1731679565669726
+    Node 18    -5.7980467239312405
+    Node 19    -5.904822324111872
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.284665106081182
+    Node 4    2.0909442734049564
+    Node 5    -1.2490784884215103
+    Node 6    2.300827566717348
+    Node 7    -5.105054389212729
+    Node 8    7.883272988699504
+    Node 9    -2.8187654781166476
+    Node 10    -7.994522048377417
+    Node 11    -3.8184433877370854
+    Node 12    -1.9663650937963122
+    Node 13    11.073795871195117
+    Node 14    -5.0011398047153905
+    Node 15    -0.8283934072704611
+    Node 16    -7.227027145146841
+    Node 17    5.019098425405395
+    Node 18    -2.7761179920639494
+    Node 19    6.662325506700931
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.3489991042137643
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    -1.58882594125712
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -1.1520586038517115
+    Attrib Beat_Sum_Overall_Average    0.27730580841878355
+    Attrib Beat_Sum_Overall_Standard_Deviation    1.9997814121296356
+    Attrib Compactness_Overall_Average    -3.0955531481179506
+    Attrib Compactness_Overall_Standard_Deviation    2.4534696688610533
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -0.5034151391751304
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -0.2160210457081604
+    Attrib LPC_Overall_Average    2.466150115482851
+    Attrib LPC_Overall_Standard_Deviation    1.8855616386146583
+    Attrib Method_of_Moments_Overall_Average    -1.0606231614805555
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -3.080140807568359
+    Attrib Root_Mean_Square_Overall_Average    -2.425060568277944
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.43642370538206865
+    Attrib Spectral_Centroid_Overall_Average    2.1045362707096493
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    1.909499790264362
+    Attrib Spectral_Flux_Overall_Average    1.1656590918084124
+    Attrib Spectral_Flux_Overall_Standard_Deviation    3.1773917537507415
+    Attrib Spectral_Rolloff_Point_Overall_Average    -0.5382752057367473
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    0.1767523360973702
+    Attrib Spectral_Variability_Overall_Average    -2.8845468088735604
+    Attrib Spectral_Variability_Overall_Standard_Deviation    -0.7513620866274497
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    0.38478083779244027
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    5.665558667354611
+    Attrib Strongest_Beat_Overall_Average    1.3390144174516232
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -4.278371842246067
+    Attrib Zero_Crossings_Overall_Average    1.4357634224274163
+    Attrib Zero_Crossings_Overall_Standard_Deviation    3.1328717311850296
+    Attrib Grand_Total    -1.7401469425650122
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.022231818379742
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    4.0228865002519365
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    0.282107949314086
+    Attrib Beat_Sum_Overall_Average    -0.9313576160817216
+    Attrib Beat_Sum_Overall_Standard_Deviation    -2.2917589441551027
+    Attrib Compactness_Overall_Average    0.24932206135297713
+    Attrib Compactness_Overall_Standard_Deviation    0.8770637674685955
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    2.617180894680371
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    0.8572644347818789
+    Attrib LPC_Overall_Average    -0.8898320556760467
+    Attrib LPC_Overall_Standard_Deviation    -3.039140920076099
+    Attrib Method_of_Moments_Overall_Average    -0.4398564264124585
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -0.6064089104506135
+    Attrib Root_Mean_Square_Overall_Average    1.3525093359434972
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.38575210154866163
+    Attrib Spectral_Centroid_Overall_Average    0.49127729237100615
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -0.7939538766380198
+    Attrib Spectral_Flux_Overall_Average    -0.36392555213263783
+    Attrib Spectral_Flux_Overall_Standard_Deviation    0.37800354073976683
+    Attrib Spectral_Rolloff_Point_Overall_Average    1.594111115374315
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    1.3663056013839898
+    Attrib Spectral_Variability_Overall_Average    1.0641249080255606
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.47913905442599286
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    1.7208906146011074
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -1.4571128073578687
+    Attrib Strongest_Beat_Overall_Average    3.1849800132047643
+    Attrib Strongest_Beat_Overall_Standard_Deviation    1.088228841944916
+    Attrib Zero_Crossings_Overall_Average    0.5320996953095252
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -0.24888888038429693
+    Attrib Grand_Total    4.050500021849803
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.095488905635095
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    2.540624121435941
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.9705025655754937
+    Attrib Beat_Sum_Overall_Average    -0.1556131237357594
+    Attrib Beat_Sum_Overall_Standard_Deviation    1.5713661929475646
+    Attrib Compactness_Overall_Average    -0.9104899263385277
+    Attrib Compactness_Overall_Standard_Deviation    1.134237906821911
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    3.791064872363043
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -1.4554929594031347
+    Attrib LPC_Overall_Average    2.632507284396139
+    Attrib LPC_Overall_Standard_Deviation    3.72370287063769
+    Attrib Method_of_Moments_Overall_Average    -0.28727986225678975
+    Attrib Method_of_Moments_Overall_Standard_Deviation    1.7405633319408422
+    Attrib Root_Mean_Square_Overall_Average    0.20848094001722614
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    -0.3579127979822045
+    Attrib Spectral_Centroid_Overall_Average    0.064055332413674
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -2.127566563673957
+    Attrib Spectral_Flux_Overall_Average    -1.0607292246096598
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -0.43292772294349635
+    Attrib Spectral_Rolloff_Point_Overall_Average    2.1038646813521593
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    1.4474195534085188
+    Attrib Spectral_Variability_Overall_Average    -0.10410818468178504
+    Attrib Spectral_Variability_Overall_Standard_Deviation    -0.8520791094855578
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    0.7314619490426796
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    1.7415657275387018
+    Attrib Strongest_Beat_Overall_Average    1.8451962690152517
+    Attrib Strongest_Beat_Overall_Standard_Deviation    3.4074967444797664
+    Attrib Zero_Crossings_Overall_Average    0.0641019635877079
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.1381121106936312
+    Attrib Grand_Total    2.5143681264675326
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    2.956871755591341
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    4.993062651765416
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.06787014845797791
+    Attrib Beat_Sum_Overall_Average    -0.9248653539122125
+    Attrib Beat_Sum_Overall_Standard_Deviation    -1.3766046556179794
+    Attrib Compactness_Overall_Average    -0.45461155769787387
+    Attrib Compactness_Overall_Standard_Deviation    0.04106513644392225
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -1.2090420131468875
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    0.24894843431862293
+    Attrib LPC_Overall_Average    -0.5019771930989776
+    Attrib LPC_Overall_Standard_Deviation    -2.399452978042999
+    Attrib Method_of_Moments_Overall_Average    -4.101392847066716
+    Attrib Method_of_Moments_Overall_Standard_Deviation    0.6066707720303481
+    Attrib Root_Mean_Square_Overall_Average    0.48858419094993033
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.44422003703391105
+    Attrib Spectral_Centroid_Overall_Average    -0.47172903270777616
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -1.910892534266641
+    Attrib Spectral_Flux_Overall_Average    0.15310109781972164
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -0.3473720527891039
+    Attrib Spectral_Rolloff_Point_Overall_Average    0.4778229615203639
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    2.0871135072817797
+    Attrib Spectral_Variability_Overall_Average    -0.06667128357809571
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.294032081588713
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    1.6794799285383106
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -1.4830572710256928
+    Attrib Strongest_Beat_Overall_Average    -3.0456731034264517
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -0.884533022000753
+    Attrib Zero_Crossings_Overall_Average    -0.05108786105573889
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -0.18617603168480673
+    Attrib Grand_Total    5.052756748605369
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    0.9445785836743501
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    1.9050224765527695
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.1937013293596794
+    Attrib Beat_Sum_Overall_Average    -2.0867078151182685
+    Attrib Beat_Sum_Overall_Standard_Deviation    1.7156867357348269
+    Attrib Compactness_Overall_Average    2.864934696060639
+    Attrib Compactness_Overall_Standard_Deviation    3.5714320559468686
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    2.9640704601099794
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    3.9516465034392625
+    Attrib LPC_Overall_Average    6.811904422193802
+    Attrib LPC_Overall_Standard_Deviation    3.47201006446305
+    Attrib Method_of_Moments_Overall_Average    -0.7958266723682023
+    Attrib Method_of_Moments_Overall_Standard_Deviation    1.1251943034440228
+    Attrib Root_Mean_Square_Overall_Average    0.9044919206950994
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    1.6402970722693773
+    Attrib Spectral_Centroid_Overall_Average    -0.9445128672717069
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -2.886718192942327
+    Attrib Spectral_Flux_Overall_Average    -0.6553002109767497
+    Attrib Spectral_Flux_Overall_Standard_Deviation    2.8635404254524803
+    Attrib Spectral_Rolloff_Point_Overall_Average    -0.11828431292447858
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -2.448861536728765
+    Attrib Spectral_Variability_Overall_Average    0.6284239134704056
+    Attrib Spectral_Variability_Overall_Standard_Deviation    1.2714654320519665
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -0.879564983378216
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    1.403553154602381
+    Attrib Strongest_Beat_Overall_Average    2.122913792427013
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -4.7733735365836845
+    Attrib Zero_Crossings_Overall_Average    -1.2193259380018735
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -2.959274892699981
+    Attrib Grand_Total    1.9102217644998953
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.8617783940279288
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    5.741143494004165
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.10872189473737585
+    Attrib Beat_Sum_Overall_Average    -1.6097471401325327
+    Attrib Beat_Sum_Overall_Standard_Deviation    -3.0008895047432222
+    Attrib Compactness_Overall_Average    -5.197889509106337
+    Attrib Compactness_Overall_Standard_Deviation    2.4154324441904493
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    1.7361859355827847
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -4.643586993761564
+    Attrib LPC_Overall_Average    1.8686779967833196
+    Attrib LPC_Overall_Standard_Deviation    -1.1076263201324514
+    Attrib Method_of_Moments_Overall_Average    -1.954146791758948
+    Attrib Method_of_Moments_Overall_Standard_Deviation    5.232806436474625
+    Attrib Root_Mean_Square_Overall_Average    -0.7159752610200756
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    -0.9070790977107697
+    Attrib Spectral_Centroid_Overall_Average    0.7613147887235628
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -1.981849508660341
+    Attrib Spectral_Flux_Overall_Average    0.3398471107732651
+    Attrib Spectral_Flux_Overall_Standard_Deviation    1.22832663256795
+    Attrib Spectral_Rolloff_Point_Overall_Average    1.7998603882620403
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    3.9297439023199114
+    Attrib Spectral_Variability_Overall_Average    -0.7626965599416975
+    Attrib Spectral_Variability_Overall_Standard_Deviation    -0.2461166286833008
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -1.2276378956794873
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -1.1150116895528481
+    Attrib Strongest_Beat_Overall_Average    0.6919030516854612
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -1.6150810600919674
+    Attrib Zero_Crossings_Overall_Average    0.34440419057327554
+    Attrib Zero_Crossings_Overall_Standard_Deviation    0.3258857487238678
+    Attrib Grand_Total    5.774640317899481
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.8879861198829769
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    -1.8676077323972229
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.38040727203261093
+    Attrib Beat_Sum_Overall_Average    -1.3145246406724604
+    Attrib Beat_Sum_Overall_Standard_Deviation    2.70981838726785
+    Attrib Compactness_Overall_Average    -0.6119604308771418
+    Attrib Compactness_Overall_Standard_Deviation    -1.9985007260212826
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    1.0753584083887657
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -1.764163645091668
+    Attrib LPC_Overall_Average    -5.695077873552099
+    Attrib LPC_Overall_Standard_Deviation    -5.713563066762646
+    Attrib Method_of_Moments_Overall_Average    -2.86956638285426
+    Attrib Method_of_Moments_Overall_Standard_Deviation    3.4754102863075214
+    Attrib Root_Mean_Square_Overall_Average    -1.4173715669028395
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    1.4082182003950316
+    Attrib Spectral_Centroid_Overall_Average    -2.3686987386166884
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    3.4868728451991204
+    Attrib Spectral_Flux_Overall_Average    1.4614704222163606
+    Attrib Spectral_Flux_Overall_Standard_Deviation    4.266938802856201
+    Attrib Spectral_Rolloff_Point_Overall_Average    -4.658976907279074
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -1.9891513860009047
+    Attrib Spectral_Variability_Overall_Average    -0.999917747216693
+    Attrib Spectral_Variability_Overall_Standard_Deviation    2.4576366461757755
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -1.08724540640617
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    1.101832949446056
+    Attrib Strongest_Beat_Overall_Average    1.1542417418153126
+    Attrib Strongest_Beat_Overall_Standard_Deviation    0.5627086302377877
+    Attrib Zero_Crossings_Overall_Average    -2.0063312450232886
+    Attrib Zero_Crossings_Overall_Standard_Deviation    4.653300121516838
+    Attrib Grand_Total    -1.8649612030536258
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    2.2819780085595
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    3.9857656525777756
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    0.2135377956316681
+    Attrib Beat_Sum_Overall_Average    -1.4697597294297624
+    Attrib Beat_Sum_Overall_Standard_Deviation    -0.0016754474138677105
+    Attrib Compactness_Overall_Average    -1.238042596812016
+    Attrib Compactness_Overall_Standard_Deviation    0.5830851541638272
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -1.348867041737024
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    1.4886914733538237
+    Attrib LPC_Overall_Average    -0.6860035583442422
+    Attrib LPC_Overall_Standard_Deviation    -2.798143677843563
+    Attrib Method_of_Moments_Overall_Average    -0.9429236114468219
+    Attrib Method_of_Moments_Overall_Standard_Deviation    0.5302787081727661
+    Attrib Root_Mean_Square_Overall_Average    0.057101959946562586
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.6724000121303766
+    Attrib Spectral_Centroid_Overall_Average    -0.7327596201114351
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -1.2487801809320913
+    Attrib Spectral_Flux_Overall_Average    -0.8209653906354912
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -0.3275177677760223
+    Attrib Spectral_Rolloff_Point_Overall_Average    -0.0905711832992447
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    1.1299285782863728
+    Attrib Spectral_Variability_Overall_Average    -0.06095342670999287
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.7523950964823327
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    1.487994743279563
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    0.1415684093662361
+    Attrib Strongest_Beat_Overall_Average    -0.43276228799427985
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -0.3262683899874506
+    Attrib Zero_Crossings_Overall_Average    -0.5237231125921611
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -0.4080817369476488
+    Attrib Grand_Total    4.048060825007032
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    0.4754352361612344
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    2.196618242853707
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.8084383281981721
+    Attrib Beat_Sum_Overall_Average    -2.6784152336631246
+    Attrib Beat_Sum_Overall_Standard_Deviation    -0.4211248232716243
+    Attrib Compactness_Overall_Average    5.348307446848741
+    Attrib Compactness_Overall_Standard_Deviation    -4.015508237324282
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -1.3416659349584257
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    2.7616726326673815
+    Attrib LPC_Overall_Average    2.0308069420388795
+    Attrib LPC_Overall_Standard_Deviation    -2.0042721731362643
+    Attrib Method_of_Moments_Overall_Average    -2.0939543696582437
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -2.5755013777177136
+    Attrib Root_Mean_Square_Overall_Average    -1.7488957904377362
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.6466097402529092
+    Attrib Spectral_Centroid_Overall_Average    -0.18780331597106117
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -2.4383333686090674
+    Attrib Spectral_Flux_Overall_Average    -1.379261168849869
+    Attrib Spectral_Flux_Overall_Standard_Deviation    1.737384991032359
+    Attrib Spectral_Rolloff_Point_Overall_Average    0.10818959141785371
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -0.9519906754493059
+    Attrib Spectral_Variability_Overall_Average    -1.8049283727665362
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.9470537636963265
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    4.311638921409301
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    3.7809788941324234
+    Attrib Strongest_Beat_Overall_Average    1.752378838708116
+    Attrib Strongest_Beat_Overall_Standard_Deviation    4.60545059872394
+    Attrib Zero_Crossings_Overall_Average    0.8615751421174991
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.8823059207594734
+    Attrib Grand_Total    2.1543558994527
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.6012053154963041
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    -0.7040485559241006
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -1.223311636121049
+    Attrib Beat_Sum_Overall_Average    1.409978194901357
+    Attrib Beat_Sum_Overall_Standard_Deviation    4.489036949478267
+    Attrib Compactness_Overall_Average    8.571308951489524
+    Attrib Compactness_Overall_Standard_Deviation    -0.7679861552552913
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -7.911565945290367
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    0.3856898463280042
+    Attrib LPC_Overall_Average    5.009097697393186
+    Attrib LPC_Overall_Standard_Deviation    2.14689681576568
+    Attrib Method_of_Moments_Overall_Average    2.1924822803385067
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -6.268128951691003
+    Attrib Root_Mean_Square_Overall_Average    2.3939409911245777
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    1.4380925167029197
+    Attrib Spectral_Centroid_Overall_Average    2.8009092923452537
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    2.350866684286387
+    Attrib Spectral_Flux_Overall_Average    -1.1511895411336333
+    Attrib Spectral_Flux_Overall_Standard_Deviation    2.292008600513743
+    Attrib Spectral_Rolloff_Point_Overall_Average    2.989716885904237
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -2.8435352643557725
+    Attrib Spectral_Variability_Overall_Average    1.2113973521221606
+    Attrib Spectral_Variability_Overall_Standard_Deviation    -1.9044381238502357
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -0.3016137878503546
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    1.414100243564146
+    Attrib Strongest_Beat_Overall_Average    0.9470839711373589
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -5.978270754924013
+    Attrib Zero_Crossings_Overall_Average    2.1338043865336305
+    Attrib Zero_Crossings_Overall_Standard_Deviation    1.2656995317864572
+    Attrib Grand_Total    -0.7774567272747382
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -1.6189581891557558
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    -2.1130156319665327
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    2.5856826825130472
+    Attrib Beat_Sum_Overall_Average    1.1842664723643925
+    Attrib Beat_Sum_Overall_Standard_Deviation    -2.298592959796132
+    Attrib Compactness_Overall_Average    2.1066612077463236
+    Attrib Compactness_Overall_Standard_Deviation    -5.568417377760775
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -8.143029438475986
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -2.7514612104869838
+    Attrib LPC_Overall_Average    3.024474840804757
+    Attrib LPC_Overall_Standard_Deviation    1.2402901705642047
+    Attrib Method_of_Moments_Overall_Average    -4.213562159526293
+    Attrib Method_of_Moments_Overall_Standard_Deviation    1.6749467132768576
+    Attrib Root_Mean_Square_Overall_Average    2.6328736256875866
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    -0.15483285259505103
+    Attrib Spectral_Centroid_Overall_Average    4.130468663683345
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    1.6387441814166126
+    Attrib Spectral_Flux_Overall_Average    -0.9486049192754488
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -1.3461881208436455
+    Attrib Spectral_Rolloff_Point_Overall_Average    3.3204741370831727
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -2.4584816965713743
+    Attrib Spectral_Variability_Overall_Average    3.153084041480752
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.20169900061266074
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -0.7486824124501654
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -3.4218866286579597
+    Attrib Strongest_Beat_Overall_Average    -0.5351290770988789
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -0.884435516315524
+    Attrib Zero_Crossings_Overall_Average    4.023476403453144
+    Attrib Zero_Crossings_Overall_Standard_Deviation    0.4768067874801976
+    Attrib Grand_Total    -2.004296189532123
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    1.71470121062588
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    1.771385561940207
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.8928330357311931
+    Attrib Beat_Sum_Overall_Average    -0.25182736973343317
+    Attrib Beat_Sum_Overall_Standard_Deviation    -2.495949727291288E-4
+    Attrib Compactness_Overall_Average    0.7885888361526584
+    Attrib Compactness_Overall_Standard_Deviation    1.1874819346469534
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -2.795074649372772
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    0.6082560374971905
+    Attrib LPC_Overall_Average    0.5371539013197183
+    Attrib LPC_Overall_Standard_Deviation    -1.3901439382117788
+    Attrib Method_of_Moments_Overall_Average    2.5337554747608624
+    Attrib Method_of_Moments_Overall_Standard_Deviation    2.1097522857233866
+    Attrib Root_Mean_Square_Overall_Average    0.6644768383318879
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.7086316441838622
+    Attrib Spectral_Centroid_Overall_Average    0.216567391424345
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -1.9333900177681163
+    Attrib Spectral_Flux_Overall_Average    -0.09522613999464513
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -0.05878157816996375
+    Attrib Spectral_Rolloff_Point_Overall_Average    0.8518332740867504
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    0.05044346530656393
+    Attrib Spectral_Variability_Overall_Average    0.5026487737260505
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.8635365761207977
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    0.7750202469603984
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    0.19636802993272112
+    Attrib Strongest_Beat_Overall_Average    -0.5641482863865014
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -2.338404199782021
+    Attrib Zero_Crossings_Overall_Average    0.7995087143180329
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.0203673461799085
+    Attrib Grand_Total    1.803812626678603
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    1.8809530159031511
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    1.5282663225668114
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    0.1962990011001343
+    Attrib Beat_Sum_Overall_Average    -1.0231094367393894
+    Attrib Beat_Sum_Overall_Standard_Deviation    1.1170372492100236
+    Attrib Compactness_Overall_Average    -2.5877054834702937
+    Attrib Compactness_Overall_Standard_Deviation    2.5773106413649685
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -1.2909683667903513
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    0.5706740998684392
+    Attrib LPC_Overall_Average    2.5896511048638557
+    Attrib LPC_Overall_Standard_Deviation    -0.8786966005707091
+    Attrib Method_of_Moments_Overall_Average    -4.827222399370844
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -1.8318493863384109
+    Attrib Root_Mean_Square_Overall_Average    -0.25217459996101144
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.9853960075871837
+    Attrib Spectral_Centroid_Overall_Average    -1.211201722367253
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -0.9206026290236534
+    Attrib Spectral_Flux_Overall_Average    1.8206890215541973
+    Attrib Spectral_Flux_Overall_Standard_Deviation    1.3323298124116818
+    Attrib Spectral_Rolloff_Point_Overall_Average    -1.9439223199110456
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -1.7425244641368003
+    Attrib Spectral_Variability_Overall_Average    -0.2580141384394771
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.6650803687839275
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -2.498222419071065
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -2.652174453788523
+    Attrib Strongest_Beat_Overall_Average    -2.6260473649024814
+    Attrib Strongest_Beat_Overall_Standard_Deviation    0.6603911385955862
+    Attrib Zero_Crossings_Overall_Average    -1.7390803454726493
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.0390605477488442
+    Attrib Grand_Total    1.5894894141779705
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    2.8370655912889453
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    2.9566591523119308
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -0.6323666719303672
+    Attrib Beat_Sum_Overall_Average    -0.47325857922172043
+    Attrib Beat_Sum_Overall_Standard_Deviation    -0.19854553155682686
+    Attrib Compactness_Overall_Average    -1.9511692210617344
+    Attrib Compactness_Overall_Standard_Deviation    0.031504845208877474
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    2.979408098317123
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -1.125076649559932
+    Attrib LPC_Overall_Average    -0.6212536736926293
+    Attrib LPC_Overall_Standard_Deviation    -2.069390108532516
+    Attrib Method_of_Moments_Overall_Average    0.25850247712920454
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -3.8953611440608378
+    Attrib Root_Mean_Square_Overall_Average    2.9983967668902105
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    0.8780366441747252
+    Attrib Spectral_Centroid_Overall_Average    0.5698058149055772
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -0.6245494785536317
+    Attrib Spectral_Flux_Overall_Average    -2.379459913183354
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -1.7912604588649672
+    Attrib Spectral_Rolloff_Point_Overall_Average    2.274841680530375
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    0.6095453688482086
+    Attrib Spectral_Variability_Overall_Average    2.2996873541111773
+    Attrib Spectral_Variability_Overall_Standard_Deviation    0.03384180373542178
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    2.238191015292417
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -0.4452006177810698
+    Attrib Strongest_Beat_Overall_Average    -1.4270522791127178
+    Attrib Strongest_Beat_Overall_Standard_Deviation    3.266808969364619
+    Attrib Zero_Crossings_Overall_Average    0.37526841533539296
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.3574484760899028
+    Attrib Grand_Total    2.9418176425202396
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    2.5878447122928376
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    5.055944860761207
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    0.3011952045251796
+    Attrib Beat_Sum_Overall_Average    -0.9427059632589004
+    Attrib Beat_Sum_Overall_Standard_Deviation    -2.00689308200927
+    Attrib Compactness_Overall_Average    -0.07296518556953457
+    Attrib Compactness_Overall_Standard_Deviation    -0.4491516807369418
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    -2.040149276438173
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    -1.474648555717313
+    Attrib LPC_Overall_Average    -1.7480743729237027
+    Attrib LPC_Overall_Standard_Deviation    0.5488903152278153
+    Attrib Method_of_Moments_Overall_Average    -0.9329010172664708
+    Attrib Method_of_Moments_Overall_Standard_Deviation    -0.728716936691992
+    Attrib Root_Mean_Square_Overall_Average    1.8901763217064984
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    -0.7410596611632227
+    Attrib Spectral_Centroid_Overall_Average    -0.9562105820396143
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -0.7066172419897337
+    Attrib Spectral_Flux_Overall_Average    -0.11067791394762345
+    Attrib Spectral_Flux_Overall_Standard_Deviation    -0.7224229719448929
+    Attrib Spectral_Rolloff_Point_Overall_Average    0.7444054704391995
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    3.282952334911373
+    Attrib Spectral_Variability_Overall_Average    1.671762803248072
+    Attrib Spectral_Variability_Overall_Standard_Deviation    -0.40471747593851914
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    0.0373622566014193
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    -1.4399731748700353
+    Attrib Strongest_Beat_Overall_Average    -1.7977717567303324
+    Attrib Strongest_Beat_Overall_Standard_Deviation    1.2882289253052572
+    Attrib Zero_Crossings_Overall_Average    -0.5133339185038758
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -0.6420843563036898
+    Attrib Grand_Total    5.061277917179553
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    0.3135231003181067
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Average    -5.466324735689628
+    Attrib Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation    -3.2596409553367796
+    Attrib Beat_Sum_Overall_Average    -1.3158625051834505
+    Attrib Beat_Sum_Overall_Standard_Deviation    2.846411603200999
+    Attrib Compactness_Overall_Average    -1.7296578290400328
+    Attrib Compactness_Overall_Standard_Deviation    -2.6789924446826654
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Average    1.0863210943010446
+    Attrib Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation    1.489196038625697
+    Attrib LPC_Overall_Average    3.1570666338614486
+    Attrib LPC_Overall_Standard_Deviation    -0.8682602246076957
+    Attrib Method_of_Moments_Overall_Average    -0.7460983507349933
+    Attrib Method_of_Moments_Overall_Standard_Deviation    0.03988725562681745
+    Attrib Root_Mean_Square_Overall_Average    -1.0195317200186753
+    Attrib Root_Mean_Square_Overall_Standard_Deviation    3.500171517370154
+    Attrib Spectral_Centroid_Overall_Average    -2.0554285579778147
+    Attrib Spectral_Centroid_Overall_Standard_Deviation    -0.8520672784891634
+    Attrib Spectral_Flux_Overall_Average    -0.0560265079838737
+    Attrib Spectral_Flux_Overall_Standard_Deviation    2.0816948578960006
+    Attrib Spectral_Rolloff_Point_Overall_Average    -2.8600882313862313
+    Attrib Spectral_Rolloff_Point_Overall_Standard_Deviation    -3.8289026414136016
+    Attrib Spectral_Variability_Overall_Average    -1.2637322358374456
+    Attrib Spectral_Variability_Overall_Standard_Deviation    2.820409623470738
+    Attrib Strength_Of_Strongest_Beat_Overall_Average    -2.3417603961140223
+    Attrib Strength_Of_Strongest_Beat_Overall_Standard_Deviation    1.6050928587765967
+    Attrib Strongest_Beat_Overall_Average    -6.7217871205486075
+    Attrib Strongest_Beat_Overall_Standard_Deviation    -2.2305623562239854
+    Attrib Zero_Crossings_Overall_Average    -3.0938990239606605
+    Attrib Zero_Crossings_Overall_Standard_Deviation    -1.2192692083721215
+    Attrib Grand_Total    -5.572292685597829
+Class B
+    Input
+    Node 0
+Class F
+    Input
+    Node 1
+Class C
+    Input
+    Node 2
+Class L
+    Input
+    Node 3
+
+
+Time taken to build model: 2.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         121               60.804  %
+Incorrectly Classified Instances        78               39.196  %
+Kappa statistic                          0.4772
+Mean absolute error                      0.2155
+Root mean squared error                  0.4057
+Relative absolute error                 57.4576 %
+Root relative squared error             93.6926 %
+Total Number of Instances              199     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.152    0.511      0.500    0.505      0.350    0.809     0.501     B
+                 0.820    0.040    0.872      0.820    0.845      0.796    0.954     0.921     F
+                 0.460    0.188    0.451      0.460    0.455      0.270    0.666     0.441     C
+                 0.647    0.142    0.611      0.647    0.629      0.496    0.830     0.591     L
+Weighted Avg.    0.608    0.130    0.612      0.608    0.610      0.480    0.815     0.614     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 24  1 14  9 |  a = B
+  6 41  3  0 |  b = F
+ 12  3 23 12 |  c = C
+  5  2 11 33 |  d = L
+

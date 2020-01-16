@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     dataset-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    199
+Attributes:   30
+              Area_Method_of_Moments_of_MFCCs_Overall_Average
+              Area_Method_of_Moments_of_MFCCs_Overall_Standard_Deviation
+              Beat_Sum_Overall_Average
+              Beat_Sum_Overall_Standard_Deviation
+              Compactness_Overall_Average
+              Compactness_Overall_Standard_Deviation
+              Fraction_Of_Low_Energy_Windows_Overall_Average
+              Fraction_Of_Low_Energy_Windows_Overall_Standard_Deviation
+              LPC_Overall_Average
+              LPC_Overall_Standard_Deviation
+              Method_of_Moments_Overall_Average
+              Method_of_Moments_Overall_Standard_Deviation
+              Root_Mean_Square_Overall_Average
+              Root_Mean_Square_Overall_Standard_Deviation
+              Spectral_Centroid_Overall_Average
+              Spectral_Centroid_Overall_Standard_Deviation
+              Spectral_Flux_Overall_Average
+              Spectral_Flux_Overall_Standard_Deviation
+              Spectral_Rolloff_Point_Overall_Average
+              Spectral_Rolloff_Point_Overall_Standard_Deviation
+              Spectral_Variability_Overall_Average
+              Spectral_Variability_Overall_Standard_Deviation
+              Strength_Of_Strongest_Beat_Overall_Average
+              Strength_Of_Strongest_Beat_Overall_Standard_Deviation
+              Strongest_Beat_Overall_Average
+              Strongest_Beat_Overall_Standard_Deviation
+              Zero_Crossings_Overall_Average
+              Zero_Crossings_Overall_Standard_Deviation
+              Grand_Total
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         120               60.3015 %
+Incorrectly Classified Instances        79               39.6985 %
+Kappa statistic                          0.4704
+Mean absolute error                      0.2588
+Root mean squared error                  0.351 
+Relative absolute error                 69.0302 %
+Root relative squared error             81.0678 %
+Total Number of Instances              199     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.458    0.126    0.537      0.458    0.494      0.352    0.827     0.503     B
+                 0.960    0.047    0.873      0.960    0.914      0.886    0.989     0.966     F
+                 0.420    0.221    0.389      0.420    0.404      0.194    0.692     0.442     C
+                 0.569    0.135    0.592      0.569    0.580      0.439    0.842     0.642     L
+Weighted Avg.    0.603    0.132    0.598      0.603    0.599      0.469    0.838     0.640     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 22  0 18  8 |  a = B
+  0 48  2  0 |  b = F
+ 15  2 21 12 |  c = C
+  4  5 13 29 |  d = L
+  

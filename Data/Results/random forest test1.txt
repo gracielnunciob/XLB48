@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     test features-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    200
+Attributes:   29
+              Area Method of Moments of MFCCs Overall Average
+              Area Method of Moments of MFCCs Overall Standard Deviation
+              Beat Sum Overall Average
+              Beat Sum Overall Standard Deviation
+              Compactness Overall Average
+              Compactness Overall Standard Deviation
+              Fraction Of Low Energy Windows Overall Average
+              Fraction Of Low Energy Windows Overall Standard Deviation
+              LPC Overall Average
+              LPC Overall Standard Deviation
+              Method of Moments Overall Average
+              Method of Moments Overall Standard Deviation
+              Root Mean Square Overall Average
+              Root Mean Square Overall Standard Deviation
+              Spectral Centroid Overall Average
+              Spectral Centroid Overall Standard Deviation
+              Spectral Flux Overall Average
+              Spectral Flux Overall Standard Deviation
+              Spectral Rolloff Point Overall Average
+              Spectral Rolloff Point Overall Standard Deviation
+              Spectral Variability Overall Average
+              Spectral Variability Overall Standard Deviation
+              Strength Of Strongest Beat Overall Average
+              Strength Of Strongest Beat Overall Standard Deviation
+              Strongest Beat Overall Average
+              Strongest Beat Overall Standard Deviation
+              Zero Crossings Overall Average
+              Zero Crossings Overall Standard Deviation
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         192               96      %
+Incorrectly Classified Instances         8                4      %
+Kappa statistic                          0.9467
+Mean absolute error                      0.1597
+Root mean squared error                  0.2154
+Relative absolute error                 42.5733 %
+Root relative squared error             49.7463 %
+Total Number of Instances              200     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.960    0.000    1.000      0.960    0.980      0.973    0.999     0.998     B
+                 0.960    0.013    0.960      0.960    0.960      0.947    0.997     0.991     C
+                 0.980    0.033    0.907      0.980    0.942      0.923    0.991     0.962     F
+                 0.940    0.007    0.979      0.940    0.959      0.946    0.998     0.994     L
+Weighted Avg.    0.960    0.013    0.962      0.960    0.960      0.947    0.996     0.986     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   
+ 48  2  0  0 |  a = B
+  0 48  2  0 |  b = C
+  0  0 49  1 |  c = F
+  0  0  3 47 |  d = L
+
