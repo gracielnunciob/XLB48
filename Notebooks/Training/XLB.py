@@ -26,11 +26,10 @@ def extract_data(filename,with_label=True):
     x_train = np.empty((0,col_count))
     y_train = np.array([])
 
-#     print(len(data))
     for line in data:
         if with_label:
             x_train = np.append(x_train,np.array(list(map(float,line[1:-2]))).reshape((1,col_count)),axis=0)
-            y_train = np.append(y_train,int(line[-1]))
+            y_train = np.append(y_train,int(float(line[-1])))
         else:
             try:
                 x_train = np.append(x_train,np.array(list(map(float,line[1:]))).reshape((1,col_count)),axis=0)
