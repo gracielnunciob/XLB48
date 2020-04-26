@@ -53,14 +53,14 @@ hp_search - model_selection object
 
 Returns: best estimator for the given data given the model selector
 """
-def train_model(x_train,y_train,hp_search):
+def train_model(x_train,y_train,hp_search,name):
     hp_search.fit(x_train,y_train)
     print("Best Score: {:.4f}".format(hp_search.best_score_))
     for k,v in hp_search.best_params_.items():
         print("{} => {}".format(k,v))
     print("Splits: {}".format(hp_search.n_splits_))
     y_out = hp_search.predict(x_train)
-    print("Accuracy: {:.4f}%".format(np.mean(y_out == y_train) * 100.0))
+    print("{} Train Accuracy: {:.4f}%".format(name,np.mean(y_out == y_train) * 100.0))
     return hp_search.best_estimator_
 
 """
@@ -73,8 +73,7 @@ y_train - target labels for data
 model_selector - model_selection object
 """
 def print_res(name,x_train,y_train,model_selector):
-    print("{}:".format(name))
-    train_model(x_train,y_train,model_selector)
+    train_model(x_train,y_train,model_selector,name)
 
     # display confusion matrix
     disp = plot_confusion_matrix(model_selector, x_train, y_train,
@@ -82,6 +81,25 @@ def print_res(name,x_train,y_train,model_selector):
                                  cmap=plt.cm.Blues,
                                  normalize='true')
     # print(y_out)\
+    
+"""
+Trains and prints the result of the training and model selection.
+
+Parameters:
+name - name of the test run
+x_train - input data
+y_train - target labels for data
+model_selector - model_selection object
+"""
+def test_res(name,x_test,y_test,model_selector):
+    y_pred = model_selector.predict(x_test)
+    # display confusion matrix
+    print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
+    disp = plot_confusion_matrix(model_selector, x_test, y_test,
+                                 display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
+                                 cmap=plt.cm.Blues,
+                                 normalize='true')
+
     
 def disp_tree(dt,x_train,y_train,filename):
     classes = ['Brave', 'Cheerful', 'Fearful', 'Love', 'Sadness', 'Calm']
