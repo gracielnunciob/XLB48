@@ -8,6 +8,7 @@ from scipy.stats import uniform, norm
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import plot_confusion_matrix
 import matplotlib.pyplot as plt
+from sklearn.metrics import f1_score
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
 
@@ -96,11 +97,13 @@ def test_res(name,x_test,y_test,model_selector):
     y_pred = model_selector.predict(x_test)
     # display confusion matrix
     print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
+    print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
     disp = plot_confusion_matrix(model_selector, x_test, y_test,
                                  display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
                                  cmap=plt.cm.Blues,
                                  normalize='true')
-
+    
+    
     
 def disp_tree(dt,x_train,y_train,filename):
     classes = ['Brave', 'Cheerful', 'Fearful', 'Love', 'Sadness', 'Calm']
