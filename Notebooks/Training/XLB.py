@@ -50,6 +50,7 @@ Parameters:
 x_train - input data
 y_train - target labels for data
 hp_search - model_selection object
+name - name of the experiment
 
 Returns: best estimator for the given data given the model selector
 """
@@ -83,12 +84,12 @@ def print_res(name,x_train,y_train,model_selector):
     # print(y_out)\
     
 """
-Trains and prints the result of the training and model selection.
+Tests and prints the result of the training and model selection.
 
 Parameters:
 name - name of the test run
-x_train - input data
-y_train - target labels for data
+x_test - input data
+y_test - target labels for data
 model_selector - model_selection object
 """
 def test_res(name,x_test,y_test,model_selector):
