@@ -12,6 +12,17 @@ from sklearn.metrics import f1_score
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
 
+"""
+This function extracts the features and labels from a csv file.
+
+Parameters:
+filename : string - file to read from
+with_label : boolean - whether the file has labels or not
+
+Returns:
+- numpy arrays containing the features and labels if with_label is True
+- numpy arrays containing the features if with_label is False
+"""
 def extract_data(filename,with_label=True):
     data = []    
     f = open(filename,"r")
@@ -104,10 +115,15 @@ def test_res(name,x_test,y_test,model_selector):
                                  normalize='true')
     
     
-    
-def disp_tree(dt,x_train,y_train,filename):
+"""
+This function displays a decision tree.
+
+Parameters:
+dt : DecisionTreeClassifier - decision tree object
+filename : string - file to read from
+"""
+def disp_tree(dt,filename):
     classes = ['Brave', 'Cheerful', 'Fearful', 'Love', 'Sadness', 'Calm']
-    dt.fit(x_train,y_train)
     file = pd.read_csv(filename)
     features = list(file)
     fig, ax = plt.subplots(figsize=(40, 40))
