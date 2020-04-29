@@ -33,7 +33,7 @@ def extract_data(filename,with_label=True):
             first = False
             continue
         data.append(line)
-    print(np.shape(data))
+#     print(np.shape(data))
     col_count = 324
     x_train = np.empty((0,col_count))
     y_train = np.array([])
@@ -47,8 +47,8 @@ def extract_data(filename,with_label=True):
                 x_train = np.append(x_train,np.array(list(map(float,line[1:]))).reshape((1,col_count)),axis=0)
             except ValueError:
                 print(line[1:])
-    print(x_train.shape)
-    print(y_train.shape)
+#     print(x_train.shape)
+#     print(y_train.shape)
     if with_label:
         return x_train, y_train
     else:
@@ -66,12 +66,13 @@ name - name of the experiment
 
 Returns: best estimator for the given data given the model selector
 """
-def train_model(x_train,y_train,hp_search,name):
+def train_model(x_train,y_train,hp_search,name,verbose=True):
     hp_search.fit(x_train,y_train)
     print("Best Score: {:.4f}".format(hp_search.best_score_))
-    for k,v in hp_search.best_params_.items():
-        print("{} => {}".format(k,v))
-    print("Splits: {}".format(hp_search.n_splits_))
+    if verbose:
+        for k,v in hp_search.best_params_.items():
+            print("{} => {}".format(k,v))
+        print("Splits: {}".format(hp_search.n_splits_))
     y_out = hp_search.predict(x_train)
     print("{} Train Accuracy: {:.4f}%".format(name,np.mean(y_out == y_train) * 100.0))
     return hp_search.best_estimator_
@@ -85,11 +86,12 @@ x_train - input data
 y_train - target labels for data
 model_selector - model_selection object
 """
-def print_res(name,x_train,y_train,model_selector):
-    train_model(x_train,y_train,model_selector,name)
+def print_res(name,x_train,y_train,model_selector,verbose=True):
+    train_model(x_train,y_train,model_selector,name,verbose)
 
     # display confusion matrix
-    disp = plot_confusion_matrix(model_selector, x_train, y_train,
+    if verbose:
+        disp = plot_confusion_matrix(model_selector, x_train, y_train,
                                  display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
                                  cmap=plt.cm.Blues,
                                  normalize='true')
@@ -104,15 +106,17 @@ x_test - input data
 y_test - target labels for data
 model_selector - model_selection object
 """
-def test_res(name,x_test,y_test,model_selector):
+def test_res(name,x_test,y_test,model_selector,verbose=True):
     y_pred = model_selector.predict(x_test)
     # display confusion matrix
     print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
     print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
-    disp = plot_confusion_matrix(model_selector, x_test, y_test,
+    if verbose:
+        disp = plot_confusion_matrix(model_selector, x_test, y_test,
                                  display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
                                  cmap=plt.cm.Blues,
                                  normalize='true')
+    return np.mean(y_pred == y_test) * 100.0, f1_score(y_test, y_pred, average='weighted')
     
     
 """
