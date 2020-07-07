@@ -54,18 +54,7 @@ def extract_data(filename,with_label=True):
     else:
         return x_train
     #print(y_train)
-"""
-Converts the labels to binary for one vs rest models
-
-Parameters:
-y_train - input data
-label - the theme of choice
-
-Returns: binary list of labels for one vs rest models
-"""
-def ovr_labels(y_train, label):
-    ovr_list = np.array(list(map(int,y_train == label)))
-    return ovr_list
+    
 """
 Trains a model using the given data and a hyperparameter search object
 
@@ -95,24 +84,13 @@ name - name of the test run
 x_train - input data
 y_train - target labels for data
 model_selector - model_selection object
-theme - themes selected for the one vs rest model
 """
-<<<<<<< Updated upstream
 def print_res(name,x_train,y_train,model_selector):
     train_model(x_train,y_train,model_selector,name)
 
     # display confusion matrix
     disp = plot_confusion_matrix(model_selector, x_train, y_train,
                                  display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
-=======
-def print_res(name,x_train,y_train,model_selector,theme,verbose=True):
-    train_model(x_train,y_train,model_selector,name,verbose)
-
-    # display confusion matrix
-    if verbose:
-        disp = plot_confusion_matrix(model_selector, x_train, y_train,
-                                 display_labels=[theme,"Not "+theme],
->>>>>>> Stashed changes
                                  cmap=plt.cm.Blues,
                                  normalize='true')
     # print(y_out)\
@@ -125,35 +103,18 @@ name - name of the test run
 x_test - input data
 y_test - target labels for data
 model_selector - model_selection object
-theme - theme selected for the one vs rest model
 """
-<<<<<<< Updated upstream
 def test_res(name,x_test,y_test,model_selector):
-=======
-def test_res(name,x_test,y_test,model_selector,theme,verbose=True):
->>>>>>> Stashed changes
     y_pred = model_selector.predict(x_test)
-    print(y_pred)
-    print(y_test)
     # display confusion matrix
     print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
     print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
-<<<<<<< Updated upstream
     disp = plot_confusion_matrix(model_selector, x_test, y_test,
                                  display_labels=["Calm","Cheerful","Bravery","Fearful","Sadness","Love"],
                                  cmap=plt.cm.Blues,
                                  normalize='true')
     
     
-=======
-    if verbose:
-        disp = plot_confusion_matrix(model_selector, x_test, y_test,
-                                 display_labels=["Not "+theme,theme],
-                                 cmap=plt.cm.Blues,
-                                 normalize='true')
-    return np.mean(y_pred == y_test) * 100.0, f1_score(y_test, y_pred, average='weighted')
-
->>>>>>> Stashed changes
 """
 This function displays a decision tree.
 
