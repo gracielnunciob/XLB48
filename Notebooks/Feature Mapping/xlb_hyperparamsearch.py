@@ -81,6 +81,7 @@ Best Result: {:.2f}""".format(i + 1,num_iter,best_result))
         
         # highest threshold
         result, cur_model = cross_validation(num_folds,model,params,X,y)
+        print("Result = {}".format(result))
         if result > best_result:
             best_params = params
             best_result = result

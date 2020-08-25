@@ -1,94 +1,14 @@
-Tempo -> IsSadness
+Tempo < 0.1752 -> IsSadness
     confidence: 0.83
     lift: 8.56
-    interstingness: 2.17
+    interestingness: 1.54
 
-IsMajor -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+IsMajor < 0.5705 -> IsSadness
+    confidence: 0.83
+    lift: 8.56
+    interestingness: 2.09
 
-IsMinor -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Power Spectrum Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMajor -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMinor -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+Tempo < 0.1752, IsMajor < 0.5705 -> IsSadness
+    confidence: 0.83
+    lift: 8.56
+    interestingness: 1.20

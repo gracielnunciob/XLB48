@@ -1,79 +1,14 @@
-Tempo -> IsCheerful
+Tempo < 0.1752 -> IsCheerful
     confidence: 0.83
     lift: 6.07
-    interstingness: 1.83
+    interestingness: 1.30
 
-IsMajor -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+IsMajor < 0.5705 -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interestingness: 1.76
 
-IsMinor -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Power Spectrum Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Compactness Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMajor -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMinor -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Compactness Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+Tempo < 0.1752, IsMajor < 0.5705 -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interestingness: 1.01

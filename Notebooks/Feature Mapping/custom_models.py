@@ -27,9 +27,14 @@ class Rule:
                                 label in the dataset
     ante_support : float - support for the antecedent
     """
-    def __init__(self,left,right,data,labels,col_names, label_names, label_support, ante_support):
+    def __init__(self,left,right,data,labels,col_names, label_names, \
+                 label_support, ante_support, thresholds):
         self.left = left
-        self.left_text = [col_names[i] for i in left]
+        self.left_text = ["{} {} {:.4f}".format(
+            col_names[i % len(col_names)],
+            ">=" if i // len(col_names) == 1 else "<",
+            thresholds[i % len(col_names)]
+        ) for i in left]
         self.right = right
         self.right_text = label_names[self.right - 1]
         self.label_support = label_support
@@ -37,7 +42,7 @@ class Rule:
         self.compute_confidence(data,labels)
         self.compute_lift(data,labels)
         self.compute_interestingness(data,labels)
-
+        
     """
     This method computes for the confidence of a rule as observed in a given 
     dataset
@@ -109,7 +114,7 @@ class Rule:
     confidence: {:.2f}
     lift: {:.2f}
     interestingness: {:.2f}""".format(
-            ", ".join(self.left_text),self.right_text,self.confidence,
+            " ^ ".join(self.left_text),self.right_text,self.confidence,
             self.lift,self.interestingness
     )
         
@@ -258,7 +263,7 @@ class APyoriAdapter(AbstractCustomModel):
     """
     def train(self,X,y=None):
         temp = self.discretize_dataset(X,self.params["thresholds"])
-        data_2 = [[i for i,j in enumerate(row) if j==1 ] for row in temp]
+        data_2 = [[int(j * len(row) + i) for i,j in enumerate(row)] for row in temp]
         #if running takes long we raise min support 
         itemsets = list(apriori(data_2,min_support=self.params["min_support"]))
         ctr = 0
@@ -272,9 +277,11 @@ class APyoriAdapter(AbstractCustomModel):
                     col_names=self.params["col_names"],
                     label_names=self.params["label_names"],
                     label_support=self.params["label_support"],
-                    ante_support=ruleset.support
+                    ante_support=ruleset.support,
+                    thresholds=self.params["thresholds"]
                 )
-                if cur_rule.confidence > self.params["min_confidence"] - 1e-9:
+                if cur_rule.lift > 1.0 - 1e-9 and \
+                    cur_rule.confidence > self.params["min_confidence"] - 1e-9:
                     self.ruleset.append(cur_rule)
         return self.ruleset
             
@@ -298,9 +305,10 @@ class APyoriAdapter(AbstractCustomModel):
             ctr += 1
             
         ave_interestingness = ave_interestingness / ctr if ctr > 0 else 0.0
+        penalty = 1.0
     
         if len(self.ruleset) < self.params["min_rules"]:
-            return 0.0
+            return ave_interestingness * penalty
         else:
             return ave_interestingness
 
@@ -327,7 +335,7 @@ class APyoriAdapter(AbstractCustomModel):
     """
     def predict_proba(self, X):
         X = self.discretize_dataset(X,self.params["thresholds"])
-        data_2 = [[i for i,j in enumerate(row) if j==1 ] for row in X]
+        data_2 = [[int(j * len(row) + i) for i,j in enumerate(row)] for row in X]
         res = []
         # for each row in test set
         for row in data_2:
