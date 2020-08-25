@@ -46,10 +46,30 @@ class Rule:
 
     Returns a float indicating the confidence value of this rule.
     """
-    def compute_confidence(self,data):
-        # TOOD
-        # replace this with actual computation
-        self.confidence = 0.9 
+     def compute_confidence(self,data):
+        #gets the column of the emotion
+        row_count, emotioncol = data.shape
+        emotioncol -= 1
+        
+        #"right" is just emotion val
+        for k in right:
+            #This loops through the whole 401
+            confcount = 0
+            for i in range(row_count):
+                #This checks if all is true pa 
+                s = True
+                for j in left:
+                    if(data[i][j] == 1 and data[i][emotioncol] == k and s == True):
+                        s = True
+                    else:
+                        s = False  
+
+                #if all are true pa for that row meaning all the featurelist are 1 for that row, increment 
+                if(s == True):
+                    confcount += 1
+                    
+            confidence = (confcount/row_count) / ruleset.support
+            self.confidence = confidence
 
     """
     This method computes for the lift of a rule as observed in a given dataset
@@ -60,8 +80,9 @@ class Rule:
     Returns a float indicating the lift value of this rule.
     """
     def compute_lift(self,data):
-        # TODO
-        self.lift = 0.0 
+        conf = compute_confidence(data)
+        lift = conf / self.label_support[self.right-1]
+        self.lift = lift
 
     """
     This method computes for the interestingness of a rule as observed in a 
@@ -74,8 +95,10 @@ class Rule:
     Returns a float indicating the interestingness value of this rule.
     """
     def compute_interestingness(self,data):
-        # TODO
-        self.interestingness = 0.0 
+        conf = compute_confidence(data)
+        interestingness = math.sqrt(conf^2 / (ruleset.support * self.label_support[self.right-1]))
+        self.interestingness = interestingness
+        
 
     def __str__(self):
         return """{} -> {}
