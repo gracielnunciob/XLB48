@@ -287,6 +287,7 @@ class APyoriAdapter(AbstractCustomModel):
     test set.
     """
     def evaluate(self,x_test=None,y_test=None):
+        # if did not meet min_rules
         ave_interestingness = 0.0
         ctr = 0
         
@@ -296,7 +297,10 @@ class APyoriAdapter(AbstractCustomModel):
             
         ave_interestingness = ave_interestingness / ctr if ctr > 0 else 0.0
     
-        return ave_interestingness
+        if len(self.ruleset) < self.params["min_rules"]:
+            return ave_interestingness / 2.0
+        else:
+            return ave_interestingness
 
     """
     Probability estimates.
