@@ -1,0 +1,94 @@
+Tempo -> IsLove
+    confidence: 0.83
+    lift: 12.38
+    interstingness: 2.61
+
+IsMajor -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+IsMinor -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Power Spectrum Overall Average -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Compactness Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Derivative of Running Mean of LPC Overall Average -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, IsMajor -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, IsMinor -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, Running Mean of Compactness Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, Running Mean of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00
+
+Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsLove
+    confidence: 0.00
+    lift: 0.00
+    interstingness: 0.00

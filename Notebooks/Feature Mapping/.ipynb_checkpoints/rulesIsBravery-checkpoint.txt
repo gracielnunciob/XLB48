@@ -1,0 +1,4 @@
+Tempo -> IsBravery
+    confidence: 0.83
+    lift: 5.97
+    interstingness: 1.81
