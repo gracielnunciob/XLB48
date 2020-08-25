@@ -1,359 +1,299 @@
 Tempo -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMajor -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 IsMinor -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Running Mean of Spectral Flux Overall Standard Deviation -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Standard Deviation of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Partial Based Spectral Flux Overall Average -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Theme_numbered -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMajor -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, IsMinor -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsCalm
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsBravery
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsFearful
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsLove
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
 
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Theme_numbered -> IsSadness
-    confidence: 0.00
+    confidence: 0.90
     lift: 0.00
     interstingness: 0.00
