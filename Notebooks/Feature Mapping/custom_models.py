@@ -25,16 +25,18 @@ class Rule:
     label_names : string[]  - list containing corresponding labels
     label_support : float[] - list containing support values for each target 
                                 label in the dataset
+    ante_support : float - support for the antecedent
     """
-    def __init__(self,left,right,data,col_names, label_names, label_support):
+    def __init__(self,left,right,data,labels,col_names, label_names, label_support, ante_support):
         self.left = left
         self.left_text = [col_names[i] for i in left]
         self.right = right
         self.right_text = label_names[self.right - 1]
         self.label_support = label_support
-        self.compute_confidence(data)
-        self.compute_lift(data)
-        self.compute_interestingness(data)
+        self.ante_support = ante_support
+        self.compute_confidence(data,labels)
+        self.compute_lift(data,labels)
+        self.compute_interestingness(data,labels)
 
     """
     This method computes for the confidence of a rule as observed in a given 
@@ -43,34 +45,38 @@ class Rule:
     Parameters:
     data : np.array - dataset to use as basis for computation of confidence 
                       value
+    labels : array-like of shape (n_samples,) - ground truth labels
 
     Returns a float indicating the confidence value of this rule.
     """
-     def compute_confidence(self,data):
+    def compute_confidence(self,data,labels):
         #gets the column of the emotion
         row_count, emotioncol = data.shape
         emotioncol -= 1
         
-        #"right" is just emotion val
-        for k in right:
-            #This loops through the whole 401
-            confcount = 0
-            for i in range(row_count):
-                #This checks if all is true pa 
-                s = True
-                for j in left:
-                    if(data[i][j] == 1 and data[i][emotioncol] == k and s == True):
-                        s = True
-                    else:
-                        s = False  
-
-                #if all are true pa for that row meaning all the featurelist are 1 for that row, increment 
-                if(s == True):
-                    confcount += 1
-                    
-            confidence = (confcount/row_count) / ruleset.support
-            self.confidence = confidence
-
+        ante_support = 0
+        joint_support = 0
+        
+        # "right" is just emotion val
+        for i,row in enumerate(data):
+            # check against each rule
+            all_ok = True
+            
+            # check for absence of any element of antecedent
+            for l_ind in self.left:
+                if l_ind not in row:
+                    all_ok = False
+                    break
+            
+            # if entire antecedent is present
+            if all_ok:
+                ante_support += 1
+                if labels[i] == self.right:
+                    joint_support += 1
+                
+            
+        self.confidence = joint_support / ante_support if ante_support > 0 else 0.0
+        
     """
     This method computes for the lift of a rule as observed in a given dataset
 
@@ -79,10 +85,8 @@ class Rule:
 
     Returns a float indicating the lift value of this rule.
     """
-    def compute_lift(self,data):
-        conf = compute_confidence(data)
-        lift = conf / self.label_support[self.right-1]
-        self.lift = lift
+    def compute_lift(self,data,labels):
+        self.lift = self.confidence / self.label_support[self.right-1]
 
     """
     This method computes for the interestingness of a rule as observed in a 
@@ -94,9 +98,9 @@ class Rule:
 
     Returns a float indicating the interestingness value of this rule.
     """
-    def compute_interestingness(self,data):
-        conf = compute_confidence(data)
-        interestingness = math.sqrt(conf^2 / (ruleset.support * self.label_support[self.right-1]))
+    def compute_interestingness(self,data,labels):
+        joint_support = self.confidence * self.ante_support
+        interestingness = np.sqrt(self.lift * joint_support)
         self.interestingness = interestingness
         
 
@@ -128,9 +132,10 @@ class AbstractCustomModel:
     This method trains the model on the given dataset
  
     Parameters:
-    x_train : numpy.ndarray - training set data
+    X : array-like of shape (n_samples,n_features) - training set data
+    y : array-like of shape (samples,)  - target labels
     """
-    def train(self,x_train,y_train=None):
+    def train(self,X,y=None):
         # TODO
         pass
  
@@ -248,11 +253,12 @@ class APyoriAdapter(AbstractCustomModel):
     This method trains the model on the given dataset
  
     Parameters:
-    x_train : numpy.ndarray - training set data
+    X : array-like of shape (n_samples,n_features) - training set data
+    y : array-like of shape (samples,)  - target labels
     """
-    def train(self,x_train,y_train=None):
-        x_train = self.discretize_dataset(x_train,self.params["thresholds"])
-        data_2 = [[i for i,j in enumerate(row) if j==1 ] for row in x_train]
+    def train(self,X,y=None):
+        temp = self.discretize_dataset(X,self.params["thresholds"])
+        data_2 = [[i for i,j in enumerate(row) if j==1 ] for row in temp]
         #if running takes long we raise min support 
         itemsets = list(apriori(data_2,min_support=self.params["min_support"]))
         ctr = 0
@@ -260,8 +266,11 @@ class APyoriAdapter(AbstractCustomModel):
         for ruleset in itemsets:
             for i in range(1,7):
                 cur_rule = Rule(
-                    list(ruleset.items),i,x_train,self.params["col_names"],\
-                    self.params["label_names"],self.params["label_support"]
+                    left=list(ruleset.items),right=i,data=X,labels=y,
+                    col_names=self.params["col_names"],
+                    label_names=self.params["label_names"],
+                    label_support=self.params["label_support"],
+                    ante_support=ruleset.support
                 )
                 if cur_rule.confidence > self.params["min_confidence"] - 1e-9:
                     self.ruleset.append(cur_rule)
@@ -285,7 +294,7 @@ class APyoriAdapter(AbstractCustomModel):
             ave_interestingness += rule.interestingness
             ctr += 1
             
-        ave_interestingness /= ctr
+        ave_interestingness = ave_interestingness / ctr if ctr > 0 else 0.0
     
         return ave_interestingness
 
