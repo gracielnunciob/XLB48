@@ -17,11 +17,13 @@ class Rule:
     Default constructor for a rule
 
     Parameters:
-    left : int[] - indices of the features used
-    right : int - label of the right hand side
-    data : np.ndarray - dataset to use in computing metrics
-    col_names : string[] - list containing feature names of the dataset
-    label_names : string[] - list containing corresponding labels
+    left : int[]            - indices of the features used
+    right : int             - label of the right hand side
+    data : np.ndarray       - dataset to use in computing metrics
+    col_names : string[]    - list containing feature names of the dataset
+    label_names : string[]  - list containing corresponding labels
+    label_support : float[] - list containing support values for each target 
+                                label in the dataset
     """
     def __init__(self,left,right,data,col_names, label_names, label_support):
         self.left = left
@@ -34,10 +36,12 @@ class Rule:
         self.compute_interestingness(data)
 
     """
-    This method computes for the confidence of a rule as observed in a given dataset
+    This method computes for the confidence of a rule as observed in a given 
+    dataset
 
     Parameters:
-    data : np.array - dataset to use as basis for computation of confidence value
+    data : np.array - dataset to use as basis for computation of confidence 
+                      value
 
     Returns a float indicating the confidence value of this rule.
     """
@@ -59,10 +63,12 @@ class Rule:
         self.lift = 0.0 
 
     """
-    This method computes for the interestingness of a rule as observed in a given dataset
+    This method computes for the interestingness of a rule as observed in a 
+    given dataset
 
     Parameters:
-    data : np.array - dataset to use as basis for computation of interestingness value
+    data : np.array - dataset to use as basis for computation of 
+    interestingness value
 
     Returns a float indicating the interestingness value of this rule.
     """
@@ -74,7 +80,10 @@ class Rule:
         return """{} -> {}
     confidence: {:.2f}
     lift: {:.2f}
-    interstingness: {:.2f}""".format(", ".join(self.left_text),self.right_text,self.confidence,self.lift,self.interestingness)
+    interstingness: {:.2f}""".format(
+            ", ".join(self.left_text),self.right_text,self.confidence,
+            self.lift,self.interestingness
+    )
         
 
 """
