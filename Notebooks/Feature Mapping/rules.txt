@@ -88,152 +88,32 @@ IsMinor -> IsSadness
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsCalm
+Running Mean of Spectral Flux Overall Standard Deviation -> IsCalm
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsCheerful
+Running Mean of Spectral Flux Overall Standard Deviation -> IsCheerful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsBravery
+Running Mean of Spectral Flux Overall Standard Deviation -> IsBravery
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsFearful
+Running Mean of Spectral Flux Overall Standard Deviation -> IsFearful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsLove
+Running Mean of Spectral Flux Overall Standard Deviation -> IsLove
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Spectral Variability Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Root Mean Square Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation -> IsSadness
+Running Mean of Spectral Flux Overall Standard Deviation -> IsSadness
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
@@ -268,32 +148,32 @@ Standard Deviation of Compactness Overall Standard Deviation -> IsSadness
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsCalm
+Derivative of Partial Based Spectral Flux Overall Average -> IsCalm
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsCheerful
+Derivative of Partial Based Spectral Flux Overall Average -> IsCheerful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsBravery
+Derivative of Partial Based Spectral Flux Overall Average -> IsBravery
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsFearful
+Derivative of Partial Based Spectral Flux Overall Average -> IsFearful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsLove
+Derivative of Partial Based Spectral Flux Overall Average -> IsLove
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Derivative of Method of Moments Overall Average -> IsSadness
+Derivative of Partial Based Spectral Flux Overall Average -> IsSadness
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
@@ -324,36 +204,6 @@ Derivative of Running Mean of LPC Overall Standard Deviation -> IsLove
     interstingness: 0.00
 
 Derivative of Running Mean of LPC Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
@@ -448,66 +298,6 @@ Tempo, IsMinor -> IsSadness
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Variability Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Compactness Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
 Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsCalm
     confidence: 0.00
     lift: 0.00
@@ -538,332 +328,32 @@ Tempo, Derivative of Running Mean of LPC Overall Standard Deviation -> IsSadness
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
+Tempo, Theme_numbered -> IsCalm
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
+Tempo, Theme_numbered -> IsCheerful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
+Tempo, Theme_numbered -> IsBravery
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
+Tempo, Theme_numbered -> IsFearful
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
+Tempo, Theme_numbered -> IsLove
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
 
-Tempo, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMajor, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, IsMinor -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-IsMinor, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Rolloff Point Overall Average, Derivative of Running Mean of Root Mean Square Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Running Mean of Root Mean Square Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Running Mean of Spectral Variability Overall Standard Deviation -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Variability Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Compactness Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCalm
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsCheerful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsBravery
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsLove
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Derivative of Running Mean of LPC Overall Standard Deviation, Derivative of Running Mean of Method of Moments Overall Average -> IsSadness
+Tempo, Theme_numbered -> IsSadness
     confidence: 0.00
     lift: 0.00
     interstingness: 0.00
