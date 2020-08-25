@@ -81,7 +81,7 @@ Best Result: {:.2f}""".format(i + 1,num_iter,best_result))
             best_result = result
             best_model = cur_model
     best_model.params = best_params
-    best_model.train(data)
+    best_model.train(X,y)
             
     return best_params,best_result,best_model    
     
