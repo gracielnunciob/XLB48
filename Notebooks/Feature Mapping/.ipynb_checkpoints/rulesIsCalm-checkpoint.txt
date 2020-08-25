@@ -1,0 +1,4 @@
+Tempo -> IsCalm
+    confidence: 0.83
+    lift: 8.56
+    interstingness: 2.17

@@ -1,0 +1,4 @@
+Tempo -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interstingness: 1.83

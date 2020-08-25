@@ -108,7 +108,7 @@ class Rule:
         return """{} -> {}
     confidence: {:.2f}
     lift: {:.2f}
-    interstingness: {:.2f}""".format(
+    interestingness: {:.2f}""".format(
             ", ".join(self.left_text),self.right_text,self.confidence,
             self.lift,self.interestingness
     )
@@ -262,9 +262,11 @@ class APyoriAdapter(AbstractCustomModel):
         #if running takes long we raise min support 
         itemsets = list(apriori(data_2,min_support=self.params["min_support"]))
         ctr = 0
+        self.min_class = int(np.amin(y))
+        self.max_class = int(np.amax(y))
         self.ruleset = []
         for ruleset in itemsets:
-            for i in range(1,7):
+            for i in range(self.min_class,self.max_class):
                 cur_rule = Rule(
                     left=list(ruleset.items),right=i,data=X,labels=y,
                     col_names=self.params["col_names"],
@@ -298,7 +300,7 @@ class APyoriAdapter(AbstractCustomModel):
         ave_interestingness = ave_interestingness / ctr if ctr > 0 else 0.0
     
         if len(self.ruleset) < self.params["min_rules"]:
-            return ave_interestingness / 2.0
+            return 0.0
         else:
             return ave_interestingness
 
@@ -329,7 +331,7 @@ class APyoriAdapter(AbstractCustomModel):
         res = []
         # for each row in test set
         for row in data_2:
-            label_ctr = [0] * 6
+            label_ctr = [0] * (self.max_class + 1)
             # check against each rule
             for rule in self.ruleset:
                 all_ok = True

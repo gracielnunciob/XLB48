@@ -1,0 +1,4 @@
+Tempo -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interstingness: 1.37
