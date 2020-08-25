@@ -57,7 +57,8 @@ def hyperparameter_search(num_folds,model,parameters,X,y,num_iter=200,random_sta
     for i in range(num_iter):
         # threshold function
         if verbose and (i + 1) % interval == 0:
-            print("Iteration {} / {}".format(i + 1,num_iter))
+            print("""Iteration {} / {}
+Best Result: {:.2f}""".format(i + 1,num_iter,best_result))
         params = {
             "thresholds" : np.random.normal(0.5, 0.15, parameters["num_features"]), 
             "min_support" : np.random.uniform(
