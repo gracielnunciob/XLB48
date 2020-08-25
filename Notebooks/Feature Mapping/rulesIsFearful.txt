@@ -1,94 +1,14 @@
-Tempo -> IsFearful
+Tempo < 0.1752 -> IsFearful
     confidence: 0.83
     lift: 3.38
-    interstingness: 1.37
+    interestingness: 0.97
 
-IsMajor -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+IsMajor < 0.5705 -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interestingness: 1.32
 
-IsMinor -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Power Spectrum Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Derivative of Running Mean of LPC Overall Average -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMajor -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, IsMinor -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Tempo, Running Mean of Spectral Flux Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
-
-Running Mean of Spectral Flux Overall Standard Deviation, Running Mean of Compactness Overall Standard Deviation, Standard Deviation of Spectral Flux Overall Standard Deviation -> IsFearful
-    confidence: 0.00
-    lift: 0.00
-    interstingness: 0.00
+Tempo < 0.1752, IsMajor < 0.5705 -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interestingness: 0.76
