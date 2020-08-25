@@ -97,7 +97,7 @@ class AbstractCustomModel:
     Parameters:
     params : dict - hyperparameters for the model
     """
-    def __init__(self,params):
+    def __init__(self,params={}):
         self.params = params
  
     """
