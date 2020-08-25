@@ -1,4 +1,5 @@
 from apyori import apriori
+import numpy as np
 
 """
 This class represents a rule extracted from the apriori algorithm.
@@ -48,7 +49,7 @@ class Rule:
     def compute_confidence(self,data):
         # TOOD
         # replace this with actual computation
-        self.confidence = 0.0 
+        self.confidence = 0.9 
 
     """
     This method computes for the lift of a rule as observed in a given dataset
@@ -123,6 +124,82 @@ class AbstractCustomModel:
     def evaluate(self,x_test,y_test=None):
         # TODO
         pass
+    
+    """
+    Probability estimates.
+
+    The returned estimates for all classes are ordered by the label of classes.
+
+    For a multi_class problem, if multi_class is set to be “multinomial” the 
+    softmax function is used to find the predicted probability of each class. 
+    Else use a one-vs-rest approach, i.e calculate the probability of each class 
+    assuming it to be positive using the logistic function. and normalize these 
+    values across all the classes.
+    
+    Parameters:
+    X : array-like of shape (n_samples, n_features) 
+        - Vector to be scored, where n_samples is the number of samples and 
+          n_features is the number of features.
+    
+    Returns:
+    T : array-like of shape (n_samples, n_classes)
+        - Returns the probability of the sample for each class in the model, 
+          where classes are ordered as they are in self.classes_.
+    """
+    def predict_proba(self, X):
+        # TODO
+        pass
+    
+    """
+    Predict logarithm of probability estimates.
+
+    The returned estimates for all classes are ordered by the label of classes.
+    
+    Parameters:
+    X : array-like of shape (n_samples, n_features) 
+        - Vector to be scored, where n_samples is the number of samples and 
+          n_features is the number of features.
+    
+    Returns:
+    T : array-like of shape (n_samples, n_classes)
+        - Returns the log-probability of the sample for each class in the 
+          model, where classes are ordered as they are in self.classes_.
+    """
+    def predict_log_proba(self,X):
+        return np.log(self.predict_proba(X))
+        
+    """
+    Predict class labels for samples in X.
+    
+    Parameters:
+    X : array_like or sparse matrix, shape (n_samples, n_features)
+        - Samples.
+
+    Returns:
+    C : array, shape [n_samples] - Predicted class label per sample.
+    """
+    def predict(self,X):
+        probas = self.predict_proba(X)
+        return np.argmax(probas,axis=1)
+
+    """
+    Return the mean accuracy on the given test data and labels.
+
+    In multi-label classification, this is the subset accuracy which is a harsh
+    metric since you require for each sample that each label set be correctly predicted.
+
+    Parameters:
+    X : array-like of shape (n_samples, n_features)
+        - Test samples.
+
+    y : array-like of shape (n_samples,) or (n_samples, n_outputs)
+        - True labels for X.
+    
+    Returns:
+    score : float - Mean accuracy of self.predict(X) wrt. y.
+    """
+    def score(self,X,y):
+        return np.mean(self.predict(X) == y)
  
 
 """
@@ -156,17 +233,16 @@ class APyoriAdapter(AbstractCustomModel):
         #if running takes long we raise min support 
         itemsets = list(apriori(data_2,min_support=self.params["min_support"]))
         ctr = 0
-        self.results = []
+        self.ruleset = []
         for ruleset in itemsets:
-#             print(ruleset)
             for i in range(1,7):
-#                 print("Adding i = {}".format(i))
-                self.results.append(Rule(
+                cur_rule = Rule(
                     list(ruleset.items),i,x_train,self.params["col_names"],\
                     self.params["label_names"],self.params["label_support"]
-                ))
-#                 print(self.results[-1])
-        return self.results
+                )
+                if cur_rule.confidence > self.params["min_confidence"] - 1e-9:
+                    self.ruleset.append(cur_rule)
+        return self.ruleset
             
     """
     This method evaluates the performance of the model on the given test set.
@@ -182,14 +258,60 @@ class APyoriAdapter(AbstractCustomModel):
         ave_interestingness = 0.0
         ctr = 0
         
-        for rule in self.results:
+        for rule in self.ruleset:
             ave_interestingness += rule.interestingness
             ctr += 1
             
         ave_interestingness /= ctr
     
         return ave_interestingness
+
+    """
+    Probability estimates.
+
+    The returned estimates for all classes are ordered by the label of classes.
+
+    For a multi_class problem, if multi_class is set to be “multinomial” the 
+    softmax function is used to find the predicted probability of each class. 
+    Else use a one-vs-rest approach, i.e calculate the probability of each class 
+    assuming it to be positive using the logistic function. and normalize these 
+    values across all the classes.
     
+    Parameters:
+    X : array-like of shape (n_samples, n_features) 
+        - Vector to be scored, where n_samples is the number of samples and 
+          n_features is the number of features.
+    
+    Returns:
+    T : array-like of shape (n_samples, n_classes)
+        - Returns the probability of the sample for each class in the model, 
+          where classes are ordered as they are in self.classes_.
+    """
+    def predict_proba(self, X):
+        X = self.discretize_dataset(X,self.params["thresholds"])
+        data_2 = [[i for i,j in enumerate(row) if j==1 ] for row in X]
+        res = []
+        # for each row in test set
+        for row in data_2:
+            label_ctr = [0] * 6
+            # check against each rule
+            for rule in self.ruleset:
+                all_ok = True
+                
+                # check for absence of any element of antecedent
+                for l_ind in rule.left:
+                    if l_ind not in row:
+                        all_ok = False
+                        break
+                
+                # if entire antecedent is present
+                if all_ok:
+                    # add log of confidence
+                    label_ctr[rule.right - 1] += np.log(rule.confidence)
+            temp_row = np.exp(np.array(label_ctr))
+            temp_row = temp_row / np.sum(temp_row)
+            res.append(temp_row)
+        return np.array(res)
     
     """
     discretize_dataset function transforms the dataset into binary o

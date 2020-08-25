@@ -71,6 +71,8 @@ def hyperparameter_search(num_folds,model,parameters,data,num_iter=200,random_st
             best_params = params
             best_result = result
             best_model = cur_model
+    best_model.params = best_params
+    best_model.train(data)
             
     return best_params,best_result,best_model    
     
