@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 """
 Takes the input of:
@@ -71,7 +72,11 @@ Best Result: {:.2f}""".format(i + 1,num_iter,best_result))
             )[0],
             "col_names" : parameters["col_names"],
             "label_names" : parameters["label_names"],
-            "label_support" : parameters["label_support"]
+            "label_support" : parameters["label_support"],
+            "min_rules" : random.randint(
+                parameters["min_rules_lo"],
+                parameters["min_rules_hi"]
+            )
         }
         
         # highest threshold
