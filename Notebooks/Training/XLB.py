@@ -243,6 +243,17 @@ def transform_rules(rule_sets):
                 rule_sets[i][j] = splits[0]+" == "+splits[1]
     return(rule_sets)
 
+"""
+This function builds the query to be used in the pandas.query() function.
+
+Parameter:
+rule: the rule to be examined
+theme: the specific theme the one vs rest model is built for
+
+Returns:
+The query form of the rule.
+
+"""
 def build_query(rule, theme):
     c = 0
     query = ""
@@ -267,9 +278,31 @@ def build_query(rule, theme):
         c+=1
     return query
 
+"""
+This function searches the dataset and returns the count of samples that a satifies the conditions of a rule.
+
+Parameter:
+query: the rule in query form to be used in pandas.query()
+dataset: the dataframe object
+
+Returns:
+The count of samples that a satifies the conditions of a rule.
+
+"""
 def db_lookup(query, dataset):
     x = dataset.query(query)
     return x.shape[0]
+
+"""
+This function computes the number of samples that satisfy the conditions of each antecedent and precedent.
+
+Parameter:
+rules: the set of rules extracted from the decision tree model 
+theme: the specific theme the one vs rest model is built for 
+
+Returns:
+The count of samples that a satifies the conditions of a rule.
+"""
 def get_count_compound(rules, theme):
     count = []
     dataset = pd.read_csv("FinalTrainingSet.csv")
@@ -284,6 +317,17 @@ def get_count_compound(rules, theme):
         x = db_lookup(query, dataset)
         count.append((query, x))
     return count
+
+"""
+This function computes the number of samples that satisfy the conditions of each antecedent.
+
+Parameter:
+rules: the set of rules extracted from the decision tree model 
+theme: the specific theme the one vs rest model is built for 
+
+Returns:
+The count of samples that a satifies the conditions of a rule.
+"""
 def get_count_A(rules, theme):
     count = []
     dataset = pd.read_csv("FinalTrainingSet.csv")
@@ -298,6 +342,18 @@ def get_count_A(rules, theme):
         x = db_lookup(query, dataset)
         count.append((query, x))
     return count
+
+"""
+This function computes the number of samples that satisfy the conditions of each precedent.
+
+Parameter:
+rules: the set of rules extracted from the decision tree model 
+theme: the specific theme the one vs rest model is built for 
+
+Returns:
+The count of samples that a satifies the conditions of a rule.
+"""
+
 def get_count_B(rules, theme):
     count = []
     dataset = pd.read_csv("FinalTrainingSet.csv")
@@ -319,6 +375,20 @@ def get_count_B(rules, theme):
         x = db_lookup(query, dataset)
         count.append((query, x))
     return count
+
+
+"""
+This function computes the confidence and lift for each rule.
+
+Parameter:
+compound: a list of tuples containing the rule and it's true positives 
+A: a list of tuples containing the precedents of the rule and it's true positives
+B: a list of tuples containing the antecedents of the rule and it's true positives
+total: the total number of samples in the dataset
+
+Returns:
+The lists of tuples cotaining the rules and it's confidence and lift.
+"""
 def compute_confidence_and_lift(compound, A, B, total):
     confidence = []
     lifts = []
@@ -336,6 +406,18 @@ def compute_confidence_and_lift(compound, A, B, total):
         else:
             lifts.append((compound[i][0], 0))
     return confidence, lifts
+"""
+This function computes the average confidence and lift.
+
+Parameter:
+compound: a list of tuples containing the rule and it's true positives 
+A: a list of tuples containing the precedents of the rule and it's true positives
+B: a list of tuples containing the antecedents of the rule and it's true positives
+total: the total number of samples in the dataset
+
+Returns:
+The average confidence and lift.
+"""
 def avg_lift_and_confidence(compound, A, B, total):
     confidence, lift = compute_confidence_and_lift(compound, A, B, total)
     avg_conf = 0
@@ -347,6 +429,15 @@ def avg_lift_and_confidence(compound, A, B, total):
         avg_lift+=i[1]
     avg_lift = avg_lift/len(lift)
     return avg_conf, avg_lift
+"""
+This function displays the confidence and lift for each rule.
+
+Parameter:
+tree: the decision tree object
+features: the list of features after feature selection
+theme: the specific theme the one vs rest model is built for
+
+"""
 def disp_conf_and_lift(tree, features, theme):
     tree_text = tree_to_text(tree, features)
     rules = extract_rules(tree_text)
