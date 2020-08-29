@@ -12,6 +12,7 @@ from sklearn.metrics import f1_score
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
 from sklearn.tree import export_text
+from custom_models import *
 
 """
 Converts the labels to binary for one vs rest models
@@ -209,6 +210,156 @@ def extract_rules(rules):
             rule_set = []
     return rule_sets
 
+def create_rule_obj_ovr(tree, features, data, theme, labels, pred):
+    dataset = pd.read_csv("FinalTrainingSet.csv")
+    col_names = dataset.columns.tolist()
+    ovr_labels = convert_to_ovr(pred, theme)
+    tree_text = tree_to_text(tree, features)
+    rules = extract_rules(tree_text)
+    lists = []
+    label_support = get_label_support(theme+1, 401, dataset)
+    ovr_labels_text = convert_to_ovr_text(labels, theme)
+    for i in rules:
+        rule = rules[i]
+        left = get_antecedents(rule, features)
+        right = get_class(rule[-1], theme)
+        obj = Rule(left,right,data,ovr_labels,features,ovr_labels_text,label_support)
+        lists.append(obj)
+    return lists
+
+def convert_to_ovr_text(labels, theme):
+    is_theme = 'is'+labels[theme]
+    not_theme = 'not'+labels[theme]
+    ovr_labels = [not_theme, is_theme]
+    return ovr_labels
+    
+
+def convert_to_ovr(labels, theme):
+    ovr_labels = []
+    for i in labels:
+        if i == theme:
+            ovr_labels.append(2)
+        else:
+            ovr_labels.append(1)
+    return ovr_labels
+
+def get_label_support(theme, total,dataset):
+    cols = dataset.columns
+    col = cols.tolist()
+    col[-1] = 'Themes'
+    dataset.columns = col
+    label_support = []
+    query = 'not Themes == '+str(theme)
+    x = db_lookup(query, dataset)
+    label_support.append(x/total)
+    query = 'Themes == '+str(theme)
+    x = db_lookup(query, dataset)    
+    label_support.append(x/total)
+    return label_support
+
+def get_class(rule, theme):
+    if '0' in rule:
+        return 1
+    elif '1' in rule:
+        return 2
+
+def get_antecedents(rule, features):
+    list = []
+    for j in range(0,len(rule)-1):
+        left = []
+        x = rule[j]
+        if '<=' in x:
+            splits = x.split('<=')
+            name = splits[0].rstrip()
+            thresh = splits[1].rstrip()
+            col = features.index(name)
+            left.append(col)
+            left.append('<=')
+            left.append(float(thresh))
+        elif '>' in x:
+            splits = x.split('>')
+            name = splits[0].rstrip()
+            thresh = splits[1].rstrip()
+            col = features.index(name)
+            left.append(col)
+            left.append('>')
+            left.append(float(thresh))
+        list.append(left)
+    return list
+
+def create_classifier(rules, x_train, ovr_train):
+    classifier = []
+    errors = []
+    data = x_train
+    labels = ovr_train
+    ignore = []
+    accuracy = 0
+    for rule in rules:
+        delete = True
+        error = 0
+        pred = rule.right - 1
+        row = 0
+        for datum in data:
+            delete = True
+            if not row in ignore:
+                for cons in rule.left:
+                    if cons[1] == '<=':
+                        if not datum[cons[0]] <= cons[2] and labels[row] == pred:
+                            delete = False
+                    elif cons[1] == '>':
+                        if not datum[cons[0]] > cons[2] and labels[row] == pred:
+                            delete = False
+                    if not delete:
+                        break
+                if delete:
+                    ignore.append(row)
+                    accuracy+=1
+                else:
+                    error+=1
+            row+=1
+        classifier.append((rule, error))
+    return classifier, accuracy
+
+def remove_unnecessary_rules(i, accuracy, x, y):
+    pos = 0
+    while pos < len(i):
+        popped = i.pop(pos)
+        mod, mod_acc = create_classifier(i, x, y)
+        if mod_acc < accuracy:
+            i.insert(pos, popped)
+            pos+=1
+    mod, mod_acc = create_classifier(i, x, y)
+    return (mod,mod_acc)
+
+def comp_func(a, b):
+    if a.confidence > b.confidence:
+        return -1
+    elif a.confidence < b.confidence:
+        return 1
+    elif a.lift > b.lift:
+        return -1
+    elif a.lift < b.lift:
+        return 1
+    elif len(a.left) > len(b.left):
+        return 1
+    elif len(a.left) < len(b.left):
+        return -1
+    else:
+        return 0
+    
+def print_classifiers(mod_clsfs):
+    model = 1
+    for mod in mod_clsfs:
+        print("MODEL NUMBER ",model,":")
+        num = 1
+        for i in mod[0]:
+            print("RULE NUMBER ", num,":")
+            print(i[0])
+            print("    error: ", i[1])
+            num+=1
+        print("ACCURACY: ",mod[1]/401*100,"%") 
+        print()
+    
 """
 This function modifies the rules so that it can be used in the pandas.query() function.
 
@@ -365,9 +516,9 @@ def get_count_B(rules, theme):
     for i in rules:
         rule = rules[i]
         if "class" in rule[-1]:
-            if '0' in i:
+            if '0' in rule[-1]:
                 query = 'not Themes == '+str(theme)
-            if '1' in i:
+            if '1' in rule[-1]:
                 query = 'Themes == '+str(theme)
                     
         else:
@@ -429,6 +580,7 @@ def avg_lift_and_confidence(compound, A, B, total):
         avg_lift+=i[1]
     avg_lift = avg_lift/len(lift)
     return avg_conf, avg_lift
+
 """
 This function displays the confidence and lift for each rule.
 
