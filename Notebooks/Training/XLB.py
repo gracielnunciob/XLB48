@@ -13,6 +13,7 @@ from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
 from sklearn.tree import export_text
 from custom_models import *
+from statistics import mode
 
 """
 Converts the labels to binary for one vs rest models
@@ -111,7 +112,16 @@ def print_res(name,x_train,y_train,model_selector,theme,verbose=True):
                                  display_labels=[theme,"Not "+theme],
                                  cmap=plt.cm.Blues,
                                  normalize='true')
-    
+
+def print_res_6_way(name,x_train,y_train,model_selector,theme,verbose=True):
+    train_model(x_train,y_train,model_selector,name,verbose)
+
+    # display confusion matrix
+    if verbose:
+        disp = plot_confusion_matrix(model_selector, x_train, y_train,
+                                 display_labels=theme,
+                                 cmap=plt.cm.Blues,
+                                 normalize='true')
 """
 Tests and prints the result of the training and model selection.
 
@@ -137,7 +147,19 @@ def test_res(name,x_test,y_test,model_selector,theme,verbose=True):
     return np.mean(y_pred == y_test) * 100.0, f1_score(y_test, y_pred, average='weighted')
 
     
-    
+def test_res_6_way(name,x_test,y_test,model_selector,theme,verbose=True):
+    y_pred = model_selector.predict(x_test)
+    print(y_pred)
+    print(y_test)
+    # display confusion matrix
+    print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
+    print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
+    if verbose:
+        disp = plot_confusion_matrix(model_selector, x_test, y_test,
+                                 display_labels=theme,
+                                 cmap=plt.cm.Blues,
+                                 normalize='true')
+    return np.mean(y_pred == y_test) * 100.0, f1_score(y_test, y_pred, average='weighted')
 """
 This function displays a decision tree.
 
@@ -210,14 +232,31 @@ def extract_rules(rules):
             rule_set = []
     return rule_sets
 
-def create_rule_obj_ovr(tree, features, data, theme, labels, pred):
+def create_rule_obj(tree, features, data, labels, pred, total):
+    dataset = pd.read_csv("FinalTrainingSet.csv")
+    col_names = dataset.columns.tolist()
+    tree_text = tree_to_text(tree, features)
+    rules = extract_rules(tree_text)
+    lists = []
+    label_support = get_label_support_6_way(total, dataset)
+    print(label_support)
+    for i in rules:
+        rule = rules[i]
+        left = get_antecedents(rule, features)
+        right = int(get_class_6_way(rule[-1]))
+        obj = Rule(left,right,data,pred,features,labels,label_support)
+        lists.append(obj)
+    return lists
+
+
+def create_rule_obj_ovr(tree, features, data, theme, labels, pred, total):
     dataset = pd.read_csv("FinalTrainingSet.csv")
     col_names = dataset.columns.tolist()
     ovr_labels = convert_to_ovr(pred, theme)
     tree_text = tree_to_text(tree, features)
     rules = extract_rules(tree_text)
     lists = []
-    label_support = get_label_support(theme+1, 401, dataset)
+    label_support = get_label_support(theme+1, total, dataset)
     ovr_labels_text = convert_to_ovr_text(labels, theme)
     for i in rules:
         rule = rules[i]
@@ -243,6 +282,19 @@ def convert_to_ovr(labels, theme):
             ovr_labels.append(1)
     return ovr_labels
 
+def get_label_support_6_way(total, dataset):
+    cols = dataset.columns
+    col = cols.tolist()
+    col[-1] = 'Themes'
+    dataset.columns = col
+    label_support = []
+    for i in range(1,7):
+        query = 'not Themes == '+str(i)
+        x = db_lookup(query, dataset)
+        label_support.append(x/total)
+    
+    return label_support
+
 def get_label_support(theme, total,dataset):
     cols = dataset.columns
     col = cols.tolist()
@@ -262,6 +314,11 @@ def get_class(rule, theme):
         return 1
     elif '1' in rule:
         return 2
+
+def get_class_6_way(rule):
+    splits = rule.split(":")
+    cls = splits[1].lstrip()
+    return float(cls)
 
 def get_antecedents(rule, features):
     list = []
@@ -287,13 +344,13 @@ def get_antecedents(rule, features):
         list.append(left)
     return list
 
-def create_classifier(rules, x_train, ovr_train):
+def eval_rules(rules, x_train, ovr_train):
     classifier = []
     errors = []
     data = x_train
     labels = ovr_train
     ignore = []
-    accuracy = 0
+    matches = 0
     for rule in rules:
         delete = True
         error = 0
@@ -313,22 +370,47 @@ def create_classifier(rules, x_train, ovr_train):
                         break
                 if delete:
                     ignore.append(row)
-                    accuracy+=1
+                    matches+=1
                 else:
                     error+=1
             row+=1
         classifier.append((rule, error))
-    return classifier, accuracy
+    return classifier, matches
+
+def predict_ovr(rules, data, labels):
+    pred = []
+    majority = mode(labels)
+    for datum in data:
+        for rule in rules:
+            x = True
+            for cons in rule.left:
+                if cons[1] == "<=" and not datum[cons[0]] <= cons[2] or \
+                cons[1] == ">" and not datum[cons[0]] > cons[2]:
+                    x = False
+                    break
+            if x:
+                pred.append(rule.right-1)
+                break
+        if not x:
+            pred.append(majority)
+    return pred
+
+def compute_accuracy(preds, labels):
+    count = 0
+    for j in range(0, len(preds)):
+        if preds[j] == labels[j]:
+            count+=1
+    print(count/len(labels))
 
 def remove_unnecessary_rules(i, accuracy, x, y):
     pos = 0
     while pos < len(i):
         popped = i.pop(pos)
-        mod, mod_acc = create_classifier(i, x, y)
+        mod, mod_acc = eval_rules(i, x, y)
         if mod_acc < accuracy:
             i.insert(pos, popped)
             pos+=1
-    mod, mod_acc = create_classifier(i, x, y)
+    mod, mod_acc = eval_rules(i, x, y)
     return (mod,mod_acc)
 
 def comp_func(a, b):
@@ -347,7 +429,7 @@ def comp_func(a, b):
     else:
         return 0
     
-def print_classifiers(mod_clsfs):
+def print_classifiers(mod_clsfs, total):
     model = 1
     for mod in mod_clsfs:
         print("MODEL NUMBER ",model,":")
@@ -355,9 +437,9 @@ def print_classifiers(mod_clsfs):
         for i in mod[0]:
             print("RULE NUMBER ", num,":")
             print(i[0])
-            print("    error: ", i[1])
+            print("    error(s): ", i[1])
             num+=1
-        print("ACCURACY: ",mod[1]/401*100,"%") 
+        print("TOTAL MATCHES: ",mod[1]/total*100,"%") 
         print()
     
 """
