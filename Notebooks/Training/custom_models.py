@@ -28,15 +28,12 @@ class Rule:
     def __init__(self,left,right,data,labels,col_names, label_names, \
                  label_support):
         self.left = left
-        self.left_text = ["{} {} {:.4f}".format(
-            col_names[i % len(col_names)],
-            ">=" if i // len(col_names) == 1 else "<",
-            thresholds[i % len(col_names)]
+        self.left_text = [" {} {} {:.4f}".format(
+            col_names[i[0]], i[1], i[2]
         ) for i in left]
         self.right = right
         self.right_text = label_names[self.right - 1]
         self.label_support = label_support
-        self.ante_support = ante_support
         self.compute_confidence(data,labels)
         self.compute_lift(data,labels)
         self.compute_interestingness(data,labels)
@@ -66,13 +63,13 @@ class Rule:
             # check for absence of any element of antecedent
             for l_ind in self.left:
                 if l_ind[1] == '<=':
-					if not row[l_ind[0]] <= l_ind[2]:
-						all_ok = False
-						break
-				elif l_ind[1] == '>':
-					if not row[l_ind[0]] > l_ind[2]:
-						all_ok = False
-						break
+                    if not row[l_ind[0]] <= l_ind[2]:
+                        all_ok = False
+                        break
+                elif l_ind[1] == '>':
+                    if not row[l_ind[0]] > l_ind[2]:
+                        all_ok = False
+                        break
             # if entire antecedent is present
             if all_ok:
                 self.ante_support += 1
@@ -80,7 +77,7 @@ class Rule:
                     joint_support += 1
                 
             
-        self.confidence = joint_support / ante_support if ante_support > 0 else 0.0
+        self.confidence = joint_support / self.ante_support if self.ante_support > 0 else 0.0
         
     """
     This method computes for the lift of a rule as observed in a given dataset
