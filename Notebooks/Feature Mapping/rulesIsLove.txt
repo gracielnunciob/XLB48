@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsLove
+    confidence: 0.83
+    lift: 12.38
+    interestingness: 1.85
+
+IsMajor < 0.5705 -> IsLove
+    confidence: 0.83
+    lift: 12.38
+    interestingness: 2.52
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsLove
+    confidence: 0.83
+    lift: 12.38
+    interestingness: 1.45

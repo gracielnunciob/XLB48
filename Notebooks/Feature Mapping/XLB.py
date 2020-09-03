@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
+from sklearn.tree import export_text
 
 """
 Converts the labels to binary for one vs rest models
@@ -150,3 +151,110 @@ def disp_tree(dt,filename):
     fig, ax = plt.subplots(figsize=(40, 40))
     treefig = tree.plot_tree(dt, class_names=classes, feature_names=features[1:-3], fontsize=12, ax=ax)
     plt.show()
+"""
+This function displays the decision tree in text form.
+
+Parameters:
+classifier : DecisionTreeClassifier - decision tree object
+features : list - the list of features used by the classifer
+"""
+def disp_tree_text(classifier, features):
+    tree_rules = export_text(classifier, feature_names=features)
+    print(tree_rules)
+"""
+This function returns the decision tree in text form.
+
+Parameters:
+classifier : DecisionTreeClassifier - decision tree object
+features : list - the list of features used by the classifer
+
+Returns:
+The decision tree in text form.
+"""
+
+def tree_to_text(classifier, features):
+    tree_rules = export_text(classifier, feature_names=features)
+    return  tree_rules
+
+"""
+This function extracts the individual rules from the decision tree.
+
+Parameter:
+rules: the decision tree in text form
+
+Returns:
+The rules used by the decision tree.
+
+"""
+def extract_rules(rules):
+    line = []
+    lines = []
+    for i in rules:
+        if i != '\n' and not i == '|' and not i == '-':
+            line.append(i)
+        if i == '\n':
+            str_line = ''.join(str(e) for e in line)
+            str_line = str_line.lstrip()
+            lines.append(str_line)
+            line = []
+
+    counter = 0
+    rule_sets = {}
+    rule_set = []
+    for i in lines:
+        rule_set.append(i)
+        if 'class' in i:
+            rule_sets[str(counter)] = rule_set
+            counter+=1
+            rule_set = []
+    return rule_sets
+
+"""
+This function modifies the rules so that it can be used in the pandas.query() function.
+
+Parameter:
+rule_sets: the rules of the decision tree
+
+Returns:
+The modified rules.
+
+"""
+def transform_rules(rule_sets):
+    for i in rule_sets:
+        for j in range(len(rule_sets[i])):
+            x = rule_sets[i][j]
+            if "<=" in x:
+                splits = x.split("<=")
+                splits[0] = splits[0].rstrip()
+                splits[1] = splits[1].lstrip()
+                splits[0] = splits[0].replace(' ','_')
+                rule_sets[i][j] = splits[0]+" <= "+splits[1]
+            elif ">" in x:
+                splits = x.split(">")
+                splits[0] = splits[0].rstrip()
+                splits[1] = splits[1].lstrip()
+                splits[0] = splits[0].replace(' ','_')
+                rule_sets[i][j] = splits[0]+" > "+splits[1]
+            elif "==" in x:
+                splits = x.split("==")
+                splits[0] = splits[0].rstrip()
+                splits[1] = splits[1].lstrip()
+                splits[0] = splits[0].replace(' ','_')
+                rule_sets[i][j] = splits[0]+" == "+splits[1]
+    return(rule_sets)
+
+def build_query(rule):
+    c = 0
+    for i in rule:
+        if c == 0:
+            query = i
+        else:
+            if "class" in i:
+                if '0' in i:
+                    query+=' and not Themes == 1'
+                if '1' in i:
+                    query+=' and Themes == 1'
+            else:
+                query+=' and '+i
+        c+=1
+    return query

@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interestingness: 1.30
+
+IsMajor < 0.5705 -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interestingness: 1.76
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsCheerful
+    confidence: 0.83
+    lift: 6.07
+    interestingness: 1.01

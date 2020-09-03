@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsSadness
+    confidence: 0.83
+    lift: 8.56
+    interestingness: 1.54
+
+IsMajor < 0.5705 -> IsSadness
+    confidence: 0.83
+    lift: 8.56
+    interestingness: 2.09
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsSadness
+    confidence: 0.83
+    lift: 8.56
+    interestingness: 1.20
