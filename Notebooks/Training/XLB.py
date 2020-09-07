@@ -377,9 +377,9 @@ def eval_rules(rules, x_train, ovr_train):
         classifier.append((rule, error))
     return classifier, matches
 
-def predict_ovr(rules, data, labels):
+def predict_ovr(rules, data, labels, t_labels):
     pred = []
-    majority = mode(labels)
+    majority = 0
     for datum in data:
         for rule in rules:
             x = True
@@ -390,6 +390,24 @@ def predict_ovr(rules, data, labels):
                     break
             if x:
                 pred.append(rule.right-1)
+                break
+        if not x:
+            pred.append(majority)
+    return pred
+
+def predict(rules, data, labels, t_labels):
+    pred = []
+    majority = float(mode(t_labels))
+    for datum in data:
+        for rule in rules:
+            x = True
+            for cons in rule.left:
+                if cons[1] == "<=" and not datum[cons[0]] <= cons[2] or \
+                cons[1] == ">" and not datum[cons[0]] > cons[2]:
+                    x = False
+                    break
+            if x:
+                pred.append(rule.right)
                 break
         if not x:
             pred.append(majority)
@@ -442,6 +460,15 @@ def print_classifiers(mod_clsfs, total):
         print("TOTAL MATCHES: ",mod[1]/total*100,"%") 
         print()
     
+def print_classifier(mod, total):
+    num = 1
+    for i in mod[0]:
+        print("RULE NUMBER ", num,":")
+        print(i[0])
+        print("    error(s): ", i[1])
+        num+=1
+    print("TOTAL MATCHES: ",mod[1]/total*100,"%") 
+    print()
 """
 This function modifies the rules so that it can be used in the pandas.query() function.
 
