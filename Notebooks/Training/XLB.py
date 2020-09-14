@@ -9,6 +9,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import plot_confusion_matrix
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import roc_auc_score
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 import matplotlib.pyplot as plt
 from sklearn.tree import export_text
@@ -139,6 +142,9 @@ def test_res(name,x_test,y_test,model_selector,theme,verbose=True):
     # display confusion matrix
     print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
     print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
+    print("{} Precision Score: {:.2f}".format(name,precision_score(y_test, y_pred, average='weighted')))
+    print("{} Recall Score: {:.2f}".format(name,recall_score(y_test, y_pred, average='weighted')))
+    print("{} ROC-AUC Score: {:.2f}".format(name,roc_auc_score(y_test, y_pred, average='weighted')))
     if verbose:
         disp = plot_confusion_matrix(model_selector, x_test, y_test,
                                  display_labels=["Not "+theme,theme],
@@ -154,6 +160,9 @@ def test_res_6_way(name,x_test,y_test,model_selector,theme,verbose=True):
     # display confusion matrix
     print("{} Validation Accuracy: {:.2f}%".format(name,np.mean(y_pred == y_test) * 100.0))
     print("{} F1-score: {:.2f}".format(name,f1_score(y_test, y_pred, average='weighted')))
+    print("{} Precision Score: {:.2f}".format(name,precision_score(y_test, y_pred, average='weighted')))
+    print("{} Recall Score: {:.2f}".format(name,recall_score(y_test, y_pred, average='weighted')))
+    print("{} ROC-AUC Score: {:.2f}".format(name,roc_auc_score(y_test, y_pred, average='weighted')))
     if verbose:
         disp = plot_confusion_matrix(model_selector, x_test, y_test,
                                  display_labels=theme,
