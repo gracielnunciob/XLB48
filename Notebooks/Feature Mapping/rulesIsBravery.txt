@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsBravery
+    confidence: 0.83
+    lift: 5.97
+    interestingness: 1.29
+
+IsMajor < 0.5705 -> IsBravery
+    confidence: 0.83
+    lift: 5.96
+    interestingness: 1.75
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsBravery
+    confidence: 0.83
+    lift: 5.96
+    interestingness: 1.00

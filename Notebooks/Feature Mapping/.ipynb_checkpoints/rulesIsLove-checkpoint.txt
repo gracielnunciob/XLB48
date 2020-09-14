@@ -1,0 +1,4 @@
+Tempo -> IsLove
+    confidence: 0.83
+    lift: 12.38
+    interstingness: 2.61

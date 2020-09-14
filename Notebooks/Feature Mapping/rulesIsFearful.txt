@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interestingness: 0.97
+
+IsMajor < 0.5705 -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interestingness: 1.32
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsFearful
+    confidence: 0.83
+    lift: 3.38
+    interestingness: 0.76

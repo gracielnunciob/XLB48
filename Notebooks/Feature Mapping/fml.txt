@@ -1,0 +1,6 @@
+Rule ['Derivative of Running Mean of MFCC Overall Average', 'Spectral Centroid Overall Standard Deviation', 'Derivative of Running Mean of Method of Moments Overall Average'] -> ['Running Mean of Spectral Rolloff Point Overall Average'] has
+                support = 0.27
+                confidence = 0.86
+                lift = 0.96
+
+    

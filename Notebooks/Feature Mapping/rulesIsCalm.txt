@@ -1,0 +1,14 @@
+Tempo < 0.1752 -> IsCalm
+    confidence: 0.83
+    lift: 2.67
+    interestingness: 0.86
+
+IsMajor < 0.5705 -> IsCalm
+    confidence: 0.83
+    lift: 2.67
+    interestingness: 1.17
+
+Tempo < 0.1752, IsMajor < 0.5705 -> IsCalm
+    confidence: 0.83
+    lift: 2.67
+    interestingness: 0.67
