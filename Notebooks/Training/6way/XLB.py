@@ -33,6 +33,14 @@ def ovr_labels(y_train, label):
     ovr_list = np.array(list(map(int,y_train == label)))
     return ovr_list
 
+def binarize(y_train, label):
+    binarized = []
+    for i in y_train:
+        if i == label:
+            binarized.append(i)
+        else:
+            binarized.append(0)
+    return binarized
 """
 This function extracts the features and labels from a csv file.
 
@@ -161,6 +169,16 @@ def multiclass_roc_auc_score(truth, pred, name, average="weighted"):
     for i in range(1, 7):
         truths.append(ovr_labels(truth, i))
         preds.append(ovr_labels(pred, i))
+    
+    for i in range(0, 6):
+        print("{} ROC-AUC Score: {:.2f}".format(name,roc_auc_score(truths[i], preds[i], average=average, multi_class = 'ovo')))
+def multiclass_roc_auc_score_rm(truth, pred, name, average="weighted"):
+
+    truths = []
+    preds = []
+    for i in range(1, 7):
+        truths.append(binarize(truth, i))
+        preds.append(binarize(pred, i))
     
     for i in range(0, 6):
         print("{} ROC-AUC Score: {:.2f}".format(name,roc_auc_score(truths[i], preds[i], average=average, multi_class = 'ovo')))
@@ -400,7 +418,7 @@ def eval_rules(rules, x_train, ovr_train):
 
 def predict_ovr(rules, data, labels):
     pred = []
-    majority = mode(labels)
+    majority = max(labels, key = list(labels).count)
     for datum in data:
         for rule in rules:
             x = True
@@ -410,10 +428,10 @@ def predict_ovr(rules, data, labels):
                     x = False
                     break
             if x:
-                pred.append(rule.right-1)
+                pred.append(float(rule.right-1))
                 break
         if not x:
-            pred.append(majority)
+            pred.append(float(majority))
     return pred
 
 def compute_accuracy(preds, labels):

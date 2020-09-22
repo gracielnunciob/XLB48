@@ -1,0 +1,4 @@
+﻿ Dataset , Test Accuracy , F1-Score , Precision , Recall , ROC-AUC  
+ Imbalanced ,0.8571,0,0.73,0.86,0.5
+ Random Oversampling ,0.5714,0,0.69,0.57,0.33
+ SMOTE ,0.6429,0,0.7,0.64,0.38

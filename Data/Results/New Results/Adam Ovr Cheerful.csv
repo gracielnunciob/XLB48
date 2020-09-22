@@ -1,0 +1,16 @@
+Algorithm , Dataset , Test Accuracy , F1-Score , Precision , Recall , ROC-AUC  
+AdaBoost , Imbalanced , 86.67% , 0.80 , 0.75 , 0.87 , 0.50 
+ , Random Oversampling , 86.67% , 0.80 , 0.75 , 0.87 , 0.50 
+ , SMOTE , 86.67% , 0.80 , 0.75 , 0.87 , 0.50 
+Decision Tree , Imbalanced , 86.67% , 0.80 , 0.75 , 0.87 , 0.50 
+ , Random Oversampling , 66.67% ,0.69 ,0.72 ,0.67 ,0.38 
+ , SMOTE , 60.00% , 0.65 , 0.71 , 0.60 , 0.35 
+LinearSVC , Imbalanced , 86.67% ,0.80 ,0.75 ,0.87 ,0.50  
+ , Random Oversampling ,  86.67% ,0.80 ,0.75 ,0.87 ,0.50 
+ , SMOTE , 86.67% ,0.80 ,0.75 ,0.87 ,0.50  
+NuSVC , Imbalanced, 93.33% ,0.94 ,0.96 ,0.93 ,0.96 
+ , Random Oversampling , 80.00% ,0.82 ,0.84 ,0.80 ,0.67 
+ , SMOTE , 93.33% ,0.94 ,0.96 ,0.93 ,0.96  
+SVC , Imbalanced , 86.67% ,0.80 ,0.75 ,0.87 ,0.50 
+ , Random Oversampling , 100.00% ,1.00 ,1.00 ,1.00 ,1.00 
+ , SMOTE , 100.00% ,1.00 ,1.00 ,1.00 ,1.00  

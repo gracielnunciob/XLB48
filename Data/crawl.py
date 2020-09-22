@@ -1,4 +1,4 @@
-import os
+import os 傻
 
 def binary_search(srch_list,key):
 	lo = 0

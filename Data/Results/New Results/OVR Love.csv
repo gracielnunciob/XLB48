@@ -1,0 +1,43 @@
+Algorithm , Dataset , Test Accuracy , F1-Score , Precision , Recall , ROC-AUC  
+AdaBoost , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,85.71%,0.85,0.85,0.86,0.72
+ , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+ComplementNB , Imbalanced ,71.43%,0.71,0.71,0.71,0.42
+ , Random Oversampling ,57.14%,0.62,0.69,0.57,0.33
+ , SMOTE ,52.38%,0.59,0.8,0.52,0.58
+Decision Tree , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,71.43%,0.71,0.71,0.71,0.54
+ , SMOTE ,80.95%,0.77,0.73,0.81,0.47
+GaussianNB , Imbalanced ,57.14%,0.62,0.69,0.57,0.33
+ , Random Oversampling ,57.14%,0.62,0.69,0.57,0.33
+ , SMOTE ,33.33%,0.43,0.6,0.33,0.19
+Gradient Boost , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+    , Random Oversampling,85.71%,0.79,0.73,0.86,0.5
+    , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+K-Nearest Neighbors , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+    , Random Oversampling ,80.95%,0.77,0.73,0.81,0.47
+    , SMOTE ,80.95%,0.77,0.73,0.81,0.47
+LinearSVC , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,85.71%,0.79,0.73,0.86,0.5
+ , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+Logistic Regression , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+    , Random Oversampling ,85.71%,0.87,0.93,0.86,0.92
+    , SMOTE ,71.43%,0.76,0.9,0.71,0.83
+Multilayer Perceptron , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,85.71%,0.79,0.73,0.86,0.5
+ , SMOTE ,80.95%,0.77,0.73,0.81,0.47
+MultinomialNB , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+    , Random Oversampling ,85.71%,0.79,0.73,0.86,0.5
+    , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+NuSVC , Imbalanced ,80.95%,0.77,0.73,0.81,0.47
+ , Random Oversampling ,85.71%,0.79,0.73,0.86,0.5
+ , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+Random Forest , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,85.71%,0.79,0.73,0.86,0.5
+ , SMOTE ,85.71%,0.79,0.73,0.86,0.5
+Regularized Linear Model , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,80.95%,0.77,0.73,0.81,0.47
+ , SMOTE ,66.67%,0.69,0.71,0.67,0.39
+SVC , Imbalanced ,85.71%,0.79,0.73,0.86,0.5
+ , Random Oversampling ,80.95%,0.77,0.73,0.81,0.47
+ , SMOTE ,80.95%,0.77,0.73,0.81,0.47
